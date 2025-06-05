@@ -1,0 +1,268 @@
+// 폰트 라이트=300 레귤러= 400, 미듐= 500, 세미볼드=600 볼드=700
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+// Mixin
+@mixin full-width {
+    max-width: 1920px;
+}
+
+@mixin contents-width {
+    width: 1280px;
+}
+
+@mixin margin-auto {
+    margin: 0 auto;
+}
+
+// 전체
+* {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+}
+
+.App {
+    @include full-width;
+    height: 100px;
+    @include margin-auto;
+    background-color: #fff;
+
+    // 헤더
+    .header {
+        @include full-width;
+        height: 60px;
+        @include margin-auto;
+        background-color: rgba(255, 255, 255, .8);
+
+        .headerNav {
+            height: 100%;
+            @include margin-auto;
+            padding: 0 5%;
+
+            a {
+                color: #000;
+            }
+
+            .fi-brands-apple {
+                font-size: 24px;
+            }
+
+            .fi-rr-search,
+            .fi-rs-user,
+            .fi-rc-shopping-bag {
+                font-size: 20px;
+            }
+
+            .me-auto {
+                margin: 0 auto;
+
+                a {
+                    margin: 0 1.04vw; //20px
+                    font-size: 0.85vw; //16px
+                }
+            }
+        }
+    }
+
+
+    // 푸터
+    .footer {
+        @include full-width;
+        height: 1250px;
+        @include margin-auto;
+        margin-top: 20px;
+        background-color: #f5f5f7;
+
+        .footerWrap {
+            @include contents-width;
+            height: 100%;
+            @include margin-auto;
+            padding: 5px 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+
+            .footerTab {
+                @include contents-width;
+                height: 40px;
+                @include margin-auto;
+                margin-bottom: 20px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                h3 {
+                    font: {
+                        size: 1.2vw; //23px
+                        weight: 600;
+                    }
+
+                    margin: 0;
+                    cursor: default;
+                }
+
+                ul {
+                    margin: 0;
+                    display: flex;
+
+                    li {
+                        width: 125px;
+                        margin: 0 50px;
+                        padding: 4px 0;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        list-style: none;
+
+                        font: {
+                            size: 0.885vw; //17px
+                            weight: 400;
+                        }
+
+                        border: 1px solid #1D1D1F;
+                        border-radius: 50px;
+                        cursor: pointer;
+
+                        &:last-of-type {
+                            margin-right: 0;
+                        }
+
+                        &:hover {
+                            background-color: #1D1D1F;
+                            color: #fff;
+                        }
+
+                        .fi-bs-arrow-up-right {
+                            font-size: 10px;
+                            margin-left: 10px;
+                        }
+                    }
+                }
+            }
+
+            .footerfont1 {
+                @include contents-width;
+
+                p {
+                    font: {
+                        size: 12px;
+                        weight: 600;
+                    }
+
+                    color: #6E6E73;
+                    cursor: default;
+                }
+            }
+
+            h4 {
+                font: {
+                    size: 15px;
+                    weight: 700;
+                }
+
+                margin: 0;
+                color: #6E6E73;
+                cursor: default;
+            }
+
+            hr{
+                margin: 0;
+            }
+
+            .font2BoxWrap {
+                @include contents-width;
+                display: flex;
+                justify-content: space-between;
+
+                .font2Box {
+                    p {
+                        margin: 0;
+
+                        font: {
+                            size: 14px;
+                            weight: 700;
+                        }
+
+                        color: #000;
+                        cursor: default;
+                    }
+
+                    ul {
+                        padding: 0;
+                        margin: 0;
+                        margin-bottom: 15px;
+
+                        li {
+                            list-style: none;
+                            text-align: left;
+                            margin: 10px 0;
+
+                            font: {
+                                size: 14px;
+                                weight: 400;
+                            }
+
+                            color: #1D1D1F;
+                            cursor: pointer;
+
+                            &:hover{
+                                text-decoration: underline;
+                            }
+                        }
+                    }
+                }
+            }
+
+            p{
+                margin: 0;
+                font: {
+                    size: 13px;
+                    weight: 500;
+                }
+                color: #6E6E73;
+
+                span{
+                    color: #0077ED;
+                }
+                cursor: default;
+            }
+
+            .footerfont3{
+                @include contents-width;
+                padding-bottom: 5px;
+                display: flex;
+                justify-content: space-between;
+
+                .font3Box{
+                    display: flex;
+
+                    ul{
+                        display: flex;
+                        margin: 0 10px;
+                        padding: 0;
+
+                        li{
+                            list-style: none;
+                            margin: 0 5px;
+
+                            font: {
+                                size: 13px;
+                                weight: 500;
+                            }
+
+                            &:not(:first-child)::before{
+                                content: '|';
+                                margin-right: 10px;
+                            }
+                            &:hover{
+                                text-decoration: underline;
+                            }
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
