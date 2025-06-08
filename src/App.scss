@@ -1,6 +1,5 @@
 @charset "utf-8";
 
-
 // 폰트 라이트=300 레귤러= 400, 미듐= 500, 세미볼드=600 볼드=700
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
@@ -32,6 +31,18 @@
   color: transparent;
 }
 
+@mixin gradient2 {
+  background: linear-gradient(94deg, #0090F7 0%, #BA62FC 15%, #F2416B 38%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+
+@mixin shadow{
+  box-shadow: 0 4px 10px rgb(0, 0, 0, 25%);
+}
+
 
 // 전체
 * {
@@ -39,12 +50,18 @@
   font-optical-sizing: auto;
   font-weight: weight;
   font-style: normal;
+
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 
+// 슬라이드
 .mySwiper {
+  @include full-width;
   height: 592px;
-  display: flex;
+  overflow: hidden;
 
   .swiper {
     width: 100%;
@@ -52,62 +69,71 @@
   }
 
   .swiper-slide {
-    text-align: center;
     cursor: pointer;
 
-    h2 {
-      margin-bottom: 0;
-      margin-top: 2%;
+    div {
+      width: 500px;
+      height: 100%;
+      @include margin-auto;
+      margin-top: 35px;
+      text-align: center;
 
-      font: {
-        size: 50px;
-        weight: 800;
+      h2 {
+        margin-bottom: 0;
+        margin-top: 2%;
+
+        font: {
+          size: 50px;
+          weight: 800;
+        }
+      }
+
+      h4 {
+        margin: 0;
+
+        font: {
+          size: 16px;
+          weight: 700;
+        }
+      }
+
+      p {
+        margin: 25px 0;
+
+        font: {
+          size: 20px;
+          weight: 500;
+        }
+      }
+
+      button {
+        width: 110px;
+        padding: 7px 15px;
+        margin: 0px 10px;
+        border: 1px solid #0077ED;
+        border-radius: 50px;
+
+        font: {
+          size: 16px;
+          weight: 500;
+        }
+
+        color: #0077ED;
+        background-color: transparent;
+
+        &:first-of-type {
+          background-color: #0077ED;
+          color: #fff;
+        }
+
+        &:last-of-type:hover {
+          background-color: #0077ED;
+          color: #fff;
+        }
       }
     }
 
-    h4 {
-      margin: 0;
 
-      font: {
-        size: 16px;
-        weight: 700;
-      }
-    }
-
-    p {
-      margin: 15px 0;
-
-      font: {
-        size: 20px;
-        weight: 500;
-      }
-    }
-
-    button {
-      width: 110px;
-      padding: 7px 15px;
-      margin: 10px 10px;
-      border: 1px solid #0077ED;
-      border-radius: 50px;
-
-      font: {
-        size: 16px;
-        weight: 500;
-      }
-
-      color: #0077ED;
-      background-color: transparent;
-
-      &:first-of-type {
-        background-color: #0077ED;
-        color: #fff;
-      }
-
-      &:last-of-type:hover {
-        background-color: #0077ED;
-        color: #fff;
-      }
-    }
   }
 
   .slideImg1 {
@@ -120,42 +146,102 @@
     background-image: url(../public/img/slide_macbook.png);
     background-size: cover;
     background-position: center;
-    position: relative;
 
-    .slide2font {
-      position: absolute;
-      left: 42%;
-      bottom: 4%;
-      color: #6E6E73;
-      font: {
-        size: 15px;
-        weight: 600;
+    div {
+
+      p {
+        margin: 20px 0;
       }
 
-      span {
-        @include gradient;
+      button {
+        margin: 15px 10px;
       }
 
+      .slide2font {
+        margin-top: 49%;
+        color: #6E6E73;
+
+        font: {
+          size: 14px;
+          weight: 600;
+        }
+
+        span {
+          @include gradient;
+        }
+      }
     }
+
+
   }
 
   .slideImg3 {
     background-image: url(../public/img/slide_iphon.png);
     background-size: cover;
     background-position: center;
+    position: relative;
+
+    div {
+      p {
+        margin: 17px 0;
+      }
+
+      button {
+        margin: 0 10px;
+      }
+
+      .slide2font {
+        color: #6E6E73;
+
+        font: {
+          size: 12px;
+          weight: 600;
+        }
+
+        span {
+          @include gradient;
+        }
+      }
+    }
+
   }
-
 }
-
 
 
 
 // 이너메뉴
 .innerMenu {
   @include full-width;
-  height: 238px;
+  height: 160px;
   @include margin-auto;
-  background-color: cornsilk;
+  padding: 3.5% 0;
+
+  div {
+    @include contents-width;
+    height: 100%;
+    @include margin-auto;
+    text-align: center;
+
+    ul {
+      width: 100%;
+      padding: 0;
+      display: flex;
+      align-items: end;
+      justify-content: space-between;
+
+      li {
+        list-style: none;
+        text-align: center;
+        cursor: pointer;
+
+        p {
+          margin-top: 15px;
+          font-weight: 400;
+          color: #1D1D1F;
+        }
+      }
+    }
+  }
 }
 
 
@@ -163,9 +249,190 @@
 //신제품 
 .newWrap {
   @include contents-width;
-  height: 766px;
   @include margin-auto;
-  background-color: lightblue;
+  padding: 7% 0;
+  text-align: center;
+
+  h3 {
+    font: {
+      size: 30px;
+      weight: 700;
+    }
+
+    color: #1D1D1F;
+  }
+
+  p {
+    font: {
+      size: 25px;
+      weight: 700;
+    }
+
+    color: #6E6E73
+  }
+
+  .newBoxWrap {
+    width: 100%;
+    height: 505px;
+    margin-top: 3%;
+    display: flex;
+    justify-content: space-between;
+
+    .new1 {
+      width: 404;
+      height: 100%;
+      padding-left: 20px;
+      padding-top: 30px;
+      border-radius: 15px;
+      background-image: url(../public/img/new1.png);
+      @include shadow;
+      text-align: left;
+      cursor: pointer;
+
+      h3 {
+        margin-bottom: 10px;
+
+        font: {
+          size: 35px;
+          weight: 700;
+        }
+
+        color: #1D1D1F
+      }
+
+      h5 {
+        @include gradient2;
+
+        font: {
+          size: 22px;
+          weight: 500;
+        }
+      }
+
+      p {
+        font: {
+          size: 18px;
+          weight: 500;
+        }
+
+        color: #1D1D1F;
+      }
+    }
+
+    .newBoxWrap2 {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      .new {
+        width: 826px;
+        height: 233px;
+        display: flex;
+        border-radius: 15px;
+        @include shadow;
+        background-color: #F5F5F7;
+        cursor: pointer;
+      }
+    }
+
+    .new2 {
+      justify-content: space-around;
+      align-items: end;
+
+      .newfontBox {
+        text-align: left;
+        margin: 26px 0;
+
+        h3 {
+          margin-bottom: 10px;
+
+          font: {
+            size: 35px;
+            weight: 700;
+          }
+
+          color: #1D1D1F;
+        }
+
+        h4 {
+          font: {
+            size: 22px;
+            weight: 600;
+          }
+
+          color: #6E6E73;
+        }
+
+        h5 {
+          @include gradient2;
+
+          font: {
+            size: 22px;
+            weight: 500;
+          }
+        }
+
+        p {
+          font: {
+            size: 18px;
+            weight: 500;
+          }
+
+          color: #1D1D1F;
+        }
+      }
+
+      img {
+        width: auto;
+        height: 211px;
+      }
+    }
+
+    .new3 {
+      align-items: center;
+      justify-content: space-around;
+
+      .newfontBox2 {
+        text-align: left;
+
+        h3 {
+          margin-top: 20px;
+          margin-bottom: 10px;
+
+          font: {
+            size: 35px;
+            weight: 700;
+          }
+
+          color: #1D1D1F;
+        }
+
+        h4 {
+          font: {
+            size: 22px;
+            weight: 600;
+          }
+
+          color: #6E6E73;
+        }
+
+        p {
+          font: {
+            size: 18px;
+            weight: 500;
+          }
+
+          color: #1D1D1F;
+        }
+      }
+
+      img {
+        width: auto;
+        height: 211px;
+      }
+    }
+  }
 }
 
 
@@ -173,9 +440,235 @@
 // 중앙 슬라이드
 .centerWrap {
   @include full-width;
-  height: 655px;
+  height: 620px;
   @include margin-auto;
-  background-color: lightgreen;
+  margin-bottom: 3%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: center;
+  background: linear-gradient(to bottom, #F5F5F7 70%, #fff 50%);
+
+  h3 {
+    font: {
+      size: 30px;
+      weight: 700;
+    }
+
+    color: #1D1D1F;
+  }
+
+  p {
+    font: {
+      size: 25px;
+      weight: 700;
+    }
+
+    color: #6E6E73
+  }
+
+  .centerSlide {
+    width: 100%;
+    height: 480px;
+    padding: 0 20px;
+    overflow: visible;
+
+    .center {
+      width: 398px;
+      height: 402px;
+      padding-left: 30px;
+      background-color: #6E6E73;
+      @include shadow;
+      border-radius: 15px;
+
+      /* Center slide text vertically */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+      &:hover{
+        transform: translateY(-10px);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+      }
+    }
+  }
+
+  .center1 {
+    background-image: url(../public/img/경험1.png);
+    background-size: cover;
+    background-position: center;
+
+    .centerfontBox1 {
+      text-align: left;
+      padding-top: 20px;
+
+      h4 {
+        font: {
+          size: 30px;
+          weight: 700;
+        }
+        @include gradient2;
+      }
+
+      p {
+        margin: 10px 0;
+
+        font: {
+          size: 20px;
+          weight: 600;
+        }
+
+        color: #1D1D1F;
+      }
+    }
+  }
+
+  .center2 {
+    background-image: url(../public/img/경험2.png);
+    background-size: cover;
+    background-position: center;
+
+    .centerfontBox2{
+      text-align: left;
+      
+      h5{
+        font: {
+          size: 12px;
+          weight: 700;
+        }
+        color: #6E6E73;
+      }
+      h4{
+        font: {
+          size: 22px;
+          weight: 700;
+        }
+      }
+      p {
+        margin: 10px 0;
+        font: {
+          size: 15px;
+          weight: 500;
+        }
+        color: #1D1D1F;
+      }
+    }
+  }
+
+  .center3 {
+    background-image: url(../public/img/경험3.png);
+    background-size: cover;
+    background-position: center;
+
+    .centerfontBox3{
+      text-align: left;
+      
+      h5{
+        font: {
+          size: 12px;
+          weight: 700;
+        }
+        color: #6E6E73;
+      }
+      h4{
+        font: {
+          size: 22px;
+          weight: 700;
+        }
+        margin: 0;
+      }
+    }
+  }
+
+  .center4 {
+    background-image: url(../public/img/경험4.png);
+    background-size: cover;
+    background-position: center;
+
+    .centerfontBox4{
+      text-align: left;
+      padding-top: 20px;
+
+      h4{
+        font: {
+          size: 22px;
+          weight: 700;
+        }
+      }
+    }
+  }
+
+  .center5 {
+    background-image: url(../public/img/경험5.png);
+    background-size: cover;
+    background-position: center;
+
+    .centerfontBox5{
+      text-align: left;
+      padding-top: 20px;
+      
+      h4{
+        font: {
+          size: 22px;
+          weight: 700;
+        }
+      }
+      p {
+        margin: 10px 0;
+
+        font: {
+          size: 15px;
+          weight: 500;
+        }
+        color: #1D1D1F;
+      }
+    }
+  }
+
+  .center6 {
+    background-image: url(../public/img/경험6.png);
+    background-size: cover;
+    background-position: center;
+
+    .centerfontBox6{
+      text-align: left;
+      padding-top: 20px;
+
+      h4{
+        font: {
+          size: 22px;
+          weight: 700;
+        }
+        line-height: 30px;
+      }
+    }
+  }
+
+  .center7 {
+    background-image: url(../public/img/경험7.png);
+    background-size: cover;
+    background-position: center;
+
+    .centerfontBox7{
+      text-align: left;
+      
+      h5{
+        font: {
+          size: 12px;
+          weight: 700;
+        }
+        color: #6E6E73;
+      }
+      h4{
+        font: {
+          size: 22px;
+          weight: 700;
+        }
+      }
+    }
+  }
 }
 
 
@@ -185,7 +678,71 @@
   @include contents-width;
   height: 748px;
   @include margin-auto;
+  text-align: center;
   background-color: lightgray;
+
+  h3 {
+    font: {
+      size: 30px;
+      weight: 700;
+    }
+    color: #1D1D1F;
+  }
+
+  p {
+    font: {
+      size: 25px;
+      weight: 700;
+    }
+    color: #6E6E73
+  }
+
+  .contentBox{
+    width: 278px;
+    height: 400;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #fff;
+    border-radius: 15px;
+    @include shadow;
+    cursor: pointer;
+
+    .contentfont{
+      text-align: left;
+  
+      h6{
+        font: {
+          size: 11px;
+          weight: 600;
+        }
+        margin: 0;
+        color: #B64400;
+      }
+
+      h4{
+        height: 50px;
+        display: flex;
+        align-items: center;
+        font: {
+          size: 14px;
+          weight: 600;
+        }
+        color: #1D1D1F;
+        margin: 0;
+      }
+
+      p{
+        font: {
+          size: 13px;
+          weight: 400;
+        }
+        color: #1D1D1F;
+        margin: 0;
+      }
+    }
+  }
 }
 
 
@@ -195,5 +752,107 @@
   @include full-width;
   height: 369px;
   @include margin-auto;
-  background-color: lightpink;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  .sale1{
+    width: 915px;
+    height: 293px;
+    padding: 0 20px;
+    background-color: #F5F5F7;
+    border-radius: 15px;
+    @include shadow;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    cursor: pointer;
+
+    .sale1font{
+      text-align: left;
+      padding-top: 12px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+
+      h5{
+        font: {
+          size: 14px;
+          weight: 600;
+        }
+        color: #6E6E73;
+      }
+      h4{
+        font: {
+          size: 30px;
+          weight: 700;
+          margin: 0;
+        }
+        color: #1D1D1F;
+      }
+      p{
+        font: {
+          size: 18px;
+          weight: 400;
+        }
+        margin: 0;
+      }
+    }
+  }
+
+  .sale2{
+    width: 915px;
+    height: 293px;
+    background-color: #1D1D1F;
+    border-radius: 15px;
+    @include shadow;
+    color: #fff;
+    display: flex;
+    justify-content: space-around;
+    cursor: pointer;
+
+    .sale2font{
+      padding-top: 15px;
+      position: relative;
+
+      h5{
+        font: {
+          size: 14px;
+          weight: 600;
+        }
+        color: #6E6E73;
+      }
+      h4{
+        font: {
+          size: 30px;
+          weight: 700;
+        }
+      }
+      p{
+        font: {
+          size: 18px;
+          weight: 400;
+        }
+      }
+      h3{
+        font: {
+          size: 20px;
+          weight: 600;
+        }
+      }
+      h6{
+        position: absolute;
+        left: 0;
+        bottom: 12%;
+        font: {
+          size: 15px;
+          weight: 600;
+        }
+        margin: 0;
+        color: #8ECFFF;
+        cursor: pointer;
+      }
+    }
+  }
 }

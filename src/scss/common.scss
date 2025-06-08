@@ -20,6 +20,10 @@
     font-optical-sizing: auto;
     font-weight: weight;
     font-style: normal;
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 .App {
@@ -109,7 +113,7 @@
                     li {
                         width: 125px;
                         margin: 0 50px;
-                        padding: 4px 0;
+                        padding: 8px 0;
                         display: flex;
                         justify-content: center;
                         align-items: center;
