@@ -14,7 +14,8 @@ const CenterSlide = () => {
       </div>
 
 
-      <Swiper slidesPerView={4} spaceBetween={30} pagination={{ clickable: true, }} modules={[Pagination, Autoplay]} autoplay={{ delay: 5000, disableOnInteraction: false }} loop={true}  className="mySwiper centerSlide">
+      <Swiper slidesPerView={4} spaceBetween={30} pagination={{ clickable: true, }} modules={[Pagination, Autoplay]} autoplay={{ delay: 5000, disableOnInteraction: false }} 
+      loop={true}  className="mySwiper centerSlide">
 
         <SwiperSlide className='center1 center'>
           <div className="centerfontBox1">

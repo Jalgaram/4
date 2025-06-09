@@ -9,11 +9,11 @@ const Footer = () => {
           <h3>빠른 링크</h3>
 
           <ul>
-            <li>매장 찾기 <i class="fi fi-bs-arrow-up-right"></i></li>
-            <li>주문 상태 <i class="fi fi-bs-arrow-up-right"></i></li>
-            <li>도움말 <i class="fi fi-bs-arrow-up-right"></i></li>
-            <li>반품 <i class="fi fi-bs-arrow-up-right"></i></li>
-            <li>관심 목록 <i class="fi fi-bs-arrow-up-right"></i></li>
+            <li>매장 찾기 <i className="fi fi-bs-arrow-up-right"></i></li>
+            <li>주문 상태 <i className="fi fi-bs-arrow-up-right"></i></li>
+            <li>도움말 <i className="fi fi-bs-arrow-up-right"></i></li>
+            <li>반품 <i className="fi fi-bs-arrow-up-right"></i></li>
+            <li>관심 목록 <i className="fi fi-bs-arrow-up-right"></i></li>
           </ul>
         </div>
 

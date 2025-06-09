@@ -1,12 +1,23 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { Nav, Navbar } from 'react-bootstrap'
 
 const Header = () => {
+  const [isFixed, setIsFixed] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsFixed(window.scrollY > 100);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
   return (
-    <div className='header'>
+    <div className={`header ${isFixed ? 'fixed' : ''}`}>
       
        <Navbar collapseOnSelect expand="xl" className="headerNav">
-        <Navbar.Brand href="#home"><i class="fi fi-brands-apple"></i></Navbar.Brand>
+        <Navbar.Brand href="#home"><i className="fi fi-brands-apple"></i></Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
 
         <Navbar.Collapse id="responsive-navbar-nav">
@@ -24,9 +35,9 @@ const Header = () => {
           </Nav>
 
           <Nav>
-            <Nav.Link href="#deets"><i class="fi fi-rr-search"></i></Nav.Link>
-            <Nav.Link href="#deets"><i class="fi fi-rs-user"></i></Nav.Link>
-            <Nav.Link eventKey={2} href="#memes"><i class="fi fi-rc-shopping-bag"></i></Nav.Link>
+            <Nav.Link href="#deets"><i className="fi fi-rr-search"></i></Nav.Link>
+            <Nav.Link href="#deets"><i className="fi fi-rs-user"></i></Nav.Link>
+            <Nav.Link eventKey={2} href="#memes"><i className="fi fi-rc-shopping-bag"></i></Nav.Link>
           </Nav>
         </Navbar.Collapse>
       

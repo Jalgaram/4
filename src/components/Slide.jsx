@@ -10,7 +10,7 @@ const Slide = () => {
     loop={true}>
       <SwiperSlide className='slideImg1'>
         <div>
-          <h2><i class="fi fi-brands-apple"></i> WATCH</h2>
+          <h2><i className="fi fi-brands-apple"></i> WATCH</h2>
           <h4>S E R I E S 10</h4>
           <p>얇아진 두께, 더 커진 존재감</p>
 
