@@ -1,27 +1,18 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.scss';
 import "./scss/common.scss";
-import CenterSlide from './components/CenterSlide';
-import Content from './components/Content';
-import Footer from './components/Footer';
-import Header from './components/Header';
-import InnerMenu from './components/InnerMenu';
-import New from './components/New';
-import Sale from './components/Sale';
-import Slide from './components/Slide';
+import { Route, Routes } from 'react-router-dom';
+import Main from './Main';
+import Detail from './Detail';
 
 function App() {
   return (
-    <div className="App">
-      <Header />
-      <Slide />
-      <InnerMenu />
-      <New />
-      <CenterSlide />
-      <Content />
-      <Sale />
-      <Footer />
-    </div>
+      <div className="App">
+        <Routes>
+          <Route path='/' element={<Main />} />
+          <Route path='/detail' element={<Detail />} />
+        </Routes>
+      </div>
   );
 }
 
