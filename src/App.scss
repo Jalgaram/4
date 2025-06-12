@@ -56,11 +56,12 @@
   box-sizing: border-box;
 }
 
+@media (max-width: 1200px) {}
 
 // 슬라이드
 .mySwiper {
   @include full-width;
-  height: 64.41vh; //592px
+  height: 592px; //592px
   overflow: hidden;
 
   .swiper {
@@ -75,7 +76,7 @@
       width: 26.04vw; //500px
       height: 100%;
       @include margin-auto;
-      margin-top: 3.8vh; //35px
+      margin-top: 35px; //35px
       text-align: center;
 
       h2 {
@@ -98,7 +99,7 @@
       }
 
       p {
-        margin: 2.72vh 0; //25px 0
+        margin: 25px 0; //25px 0
 
         font: {
           size: 1.04vw; //20px
@@ -107,8 +108,8 @@
       }
 
       button {
-        width: 5.72vw; //110px
-        padding: 0.76vh 0.78vw; //7px 15px
+        width: 5.8vw; //110px
+        padding: 7px 0.78vw; //7px 15px
         margin: 0 0.52vw; //0 10px
         border: 1px solid #0077ED;
         border-radius: 50px;
@@ -133,8 +134,6 @@
         }
       }
     }
-
-
   }
 
   .slideImg1 {
@@ -149,17 +148,20 @@
     background-position: center;
 
     div {
+      position: relative;
 
       p {
-        margin: 2.17vh 0; //20px 0
+        margin: 20px 0; //20px 0
       }
 
       button {
-        margin: 1.63vh 0.52vw; //15px 10px
+        margin: 15px 0.52vw; //15px 10px
       }
 
       .slide2font {
-        margin-top: 49%;
+        position: absolute;
+        bottom: 10%;
+        left: 20%;
         color: #6E6E73;
 
         font: {
@@ -172,8 +174,6 @@
         }
       }
     }
-
-
   }
 
   .slideImg3 {
@@ -184,7 +184,7 @@
 
     div {
       p {
-        margin: 1.84vh 0; //17px 0
+        margin: 17px 0; //17px 0
       }
 
       button {
@@ -204,11 +204,8 @@
         }
       }
     }
-
   }
 }
-
-
 
 // 이너메뉴
 .innerMenu {
@@ -216,14 +213,13 @@
   @include margin-auto;
   padding: 3.5% 0;
 
-  div {
+  .innerWrap {
     @include contents-width;
     height: 100%;
     @include margin-auto;
     text-align: center;
 
     ul {
-      width: 100%;
       padding: 0;
       display: flex;
       align-items: end;
@@ -233,6 +229,11 @@
         list-style: none;
         text-align: center;
         cursor: pointer;
+
+        img {
+          width: auto;
+          height: 9.9vh; //91px
+        }
 
         p {
           margin-top: 1.63vh; //15px
@@ -394,7 +395,7 @@
 
         img {
           width: auto;
-          height: 22.95vh; //211px
+          height: 22vh; //211px
         }
       }
 
@@ -412,7 +413,7 @@
             margin-bottom: 1.088vh; //10px
 
             font: {
-              size: 1.82vw; //35px
+              size: 1.8vw; //35px
               weight: 700;
             }
 
@@ -439,8 +440,8 @@
         }
 
         img {
-          width: auto;
-          height: 22.95vh; //211px
+          width: 14.73vw; //283px
+          height: auto;
         }
       }
     }
@@ -759,6 +760,16 @@
       flex-direction: column;
       justify-content: space-around;
       align-items: center;
+
+      img[alt="악세"] {
+        max-width: 10.93vw; //210px
+        height: auto;
+      }
+
+      img[alt="색상"] {
+        max-width: 6.77vw; //103px
+        height: auto;
+      }
     }
 
     .contentBox {
@@ -987,5 +998,54 @@
         }
       }
     }
+  }
+}
+
+
+// 고객지원
+.serviceWrap {
+  @include full-width;
+  @include margin-auto;
+  text-align: center;
+
+  img {
+    max-width: 98.95vw;
+    height: auto;
+  }
+
+  .serviceContent {
+    margin: 4% 0;
+    text-align: center;
+
+    h2 {
+      font: {
+        size: 2.08vw; //40px
+        weight: 700;
+      }
+
+      color: #1D1D1F;
+      cursor: default;
+    }
+
+    .serviceRow {
+      margin: 4% 0;
+      width: 100%;
+
+      .serviceCol {
+        height: 183px;
+        background-color: #F5F5F7;
+        border-radius: 15px;
+        @include shadow;
+
+        cursor: pointer;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+        &:hover {
+          transform: translateY(-10px);
+          box-shadow: 0 0.52vw 1.04vw rgba(0, 0, 0, 0.15);
+        }
+      }
+    }
+
   }
 }

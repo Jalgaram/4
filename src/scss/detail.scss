@@ -16,7 +16,7 @@
 }
 
 @mixin contents-width {
-    width: 1133px;
+    width: 59vw;
 }
 
 @mixin margin-auto {
@@ -40,7 +40,7 @@
     @include full-width;
     @include margin-auto;
 
-    hr{
+    hr {
         margin: 0;
     }
 
@@ -52,7 +52,7 @@
             margin: 0;
 
             font: {
-                size: 20px;
+                size: 1.041vw;
                 weight: 600;
             }
 
@@ -63,7 +63,7 @@
 
     .detailBigBox {
         @include contents-width;
-        margin: 2% auto;
+        margin: 4% auto;
         margin-bottom: 4%;
         padding: 0;
 
@@ -100,16 +100,19 @@
                     }
 
                     p {
+                        font-size: 0.83vw;
                         color: #1D1D1F;
+
                         margin: {
                             top: 2%;
                             bottom: 0;
                         }
+
                         cursor: default;
 
                         span {
                             font: {
-                                size: 13px;
+                                size: 0.611vw;
                                 weight: 600;
                             }
 
@@ -131,19 +134,19 @@
                 .select-label {
                     position: absolute;
                     top: 5px;
-                    left: 8px;
-                    font-size: 12px;
+                    left: 0.41vw;
+                    font-size: 0.625vw;
                     color: #888;
                     background-color: white;
-                    padding: 0 4px;
+                    padding: 0 0.2vw;
                 }
 
                 #model {
                     padding: {
                         top: 20px;
-                        right: 40px;
+                        right: 2.86vw;
                         bottom: 5px;
-                        left: 5px;
+                        left: 0.26vw;
                     }
 
                     border-radius: 10px;
@@ -151,7 +154,7 @@
 
                     font: {
                         weight: 400;
-                        size: 17px;
+                        size: 0.78vw;
                     }
 
                     &:focus {
@@ -162,7 +165,7 @@
 
             h4 {
                 font: {
-                    size: 15px;
+                    size: 0.78vw;
                     weight: 700;
                 }
 
@@ -183,14 +186,14 @@
                     border-radius: 50px;
                     cursor: pointer;
                     border: 2px solid transparent;
-                   
-                    &.active{
+
+                    &.active {
                         border: 2px solid #007aff;
                     }
                 }
             }
 
-            hr{
+            hr {
                 margin: 0;
             }
 
@@ -202,12 +205,12 @@
 
                 .detailbtn1,
                 .detailbtn2 {
-                    width: 200px;
+                    width: 10.41vw;
                     padding: 10px 0;
                     border-radius: 15px;
 
                     font: {
-                        size: 16px;
+                        size: 0.83vw;
                         weight: 500;
                     }
                 }
@@ -220,7 +223,7 @@
                     margin: 0;
 
                     font: {
-                        size: 15px;
+                        size: 0.78vw;
                     }
 
                     cursor: default;
@@ -230,7 +233,7 @@
                     margin: 0;
 
                     font: {
-                        size: 14px;
+                        size: 0.729vw;
                         weight: 400;
                     }
 
@@ -238,12 +241,14 @@
 
                     span {
                         font: {
-                            size: 14px;
+                            size: 0.72vw;
                             weight: 500;
                         }
+
                         .detailup {
-                            font-size: 10px;
+                            font-size: 0.52vw;
                         }
+
                         color: #0077ED;
                         cursor: pointer;
                     }
@@ -266,50 +271,103 @@
 }
 
 
-.detailTab_wrap{
+.detailTab_wrap {
     @include contents-width;
     @include margin-auto;
 
-    .detailImg2{
+    table {
+        margin: 5% 0;
+
+        th {
+            width: 30%;
+            height: auto;
+            font-size: 1.197vw;
+            color: #1D1D1F;
+            padding: 0;
+            text-align: center;
+            vertical-align: middle;
+        }
+
+        td {
+            padding: 3% 0;
+            margin: 0;
+            vertical-align: middle;
+            color: #1D1D1F;
+
+            p {
+                margin: 10px 0;
+                font-size: 0.83vw;
+            }
+
+            h5 {
+                margin: 5px 0;
+
+                font: {
+                    size: 0.83vw;
+                    weight: 600;
+                }
+            }
+
+            h6 {
+                margin: 1.5% 0;
+
+                font: {
+                    size: 0.83vw;
+                    weight: 400;
+                }
+
+                line-height: 25px;
+            }
+        }
+
+        .detailTabtable2 {
+            h6 {
+                font-weight: 600;
+            }
+        }
+
+    }
+
+    .detailImg2 {
         width: 100%;
         height: 480px;
-        @include margin-auto;
+        margin: 5% auto;
         background-color: #f5f5f7;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
-        
-        .detailimgFont{
-            padding:4% 0;
+
+        .detailimgFont {
+            padding: 4% 0;
             text-align: center;
 
-            h3{
-                font-size: 32px;
+            h3 {
+                font-size: 1.66vw;
                 font-weight: 700;
                 color: #1D1D1F;
                 margin: 0;
                 cursor: default;
             }
 
-            p{
+            p {
                 margin: 10px 0;
                 font-weight: 500;
                 color: #1D1D1F;
                 cursor: default;
             }
 
-            h5{
+            h5 {
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                font-size: 15px;
+                font-size: 0.78vw;
                 color: #0077ED;
                 cursor: pointer;
             }
         }
 
-        img{
+        img {
             width: auto;
             height: 280px;
         }

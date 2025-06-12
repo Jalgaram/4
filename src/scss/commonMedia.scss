@@ -1,0 +1,272 @@
+@charset "utf-8";
+
+@media (max-width: 1199px) {
+
+    // 헤더
+    .header {
+
+        .headerNav {
+            position: relative;
+
+            .navbar-toggler{
+                position: absolute;
+                left: 5%;
+                top: 10px;
+            }
+
+            .fi-brands-apple {
+                font-size: 30px !important; //24px
+                position: absolute;
+                top: 15px;
+                left: 50%;
+            }
+
+            .fi-rr-search,
+            .fi-rs-user,
+            .fi-rc-shopping-bag {
+                font-size: 20px !important; //20px
+            }
+
+            .me-auto {
+                margin: 0 auto;
+
+                a {
+                    margin: 0 1.66vw; //20px
+                    font-size: 16px !important; //16px
+
+                    &:hover{
+                        text-decoration: underline;
+                    }
+                }
+            }
+
+             #responsive-navbar-nav{
+               margin-top: 4.6%;
+               z-index: 999;
+               background-color: rgba(255, 255, 255, .8);
+
+               .nav-link{
+                 i{
+                   margin-left:  1.04vw
+                 }
+               }
+            }
+        }
+    }
+
+    // 푸터
+    .footer {
+        height: 1400px !important;
+
+        .footerWrap {
+            .footerTab {
+
+                h3 {
+                    font: {
+                        size: 1.8vw !important; //23px
+                    }
+                }
+
+                ul {
+
+                    li {
+                        width: 7.5vw !important; //125px
+                        margin: 0 1.9vw !important; //50px
+
+                        font: {
+                            size: 1.2vw !important; //17px
+                        }
+
+                        .fi-bs-arrow-up-right {
+                            font-size: 0.75vw !important; //10px
+                            margin-left: 0.83vw !important; //10px
+                        }
+                    }
+                }
+            }
+
+            .footerfont1 {
+                p {
+                    font: {
+                        size: 1vw !important; //12px
+                    }
+                }
+            }
+
+            h4 {
+                font: {
+                    size: 1.25vw !important; //15px
+                }
+            }
+
+            .font2BoxWrap {
+                .font2Box {
+                    p {
+                        font: {
+                            size: 1.16vw !important; //14px
+                        }
+                    }
+
+                    ul {
+                        li {
+                            font: {
+                                size: 1.16vw !important; //14px
+                            }
+                        }
+                    }
+                }
+            }
+
+            p {
+                font: {
+                    size: 1.083vw !important; //13px
+                }
+            }
+
+            .footerfont3 {
+
+                .font3Box {
+
+                    ul {
+                        margin: 0 0.83vw !important; //10px
+
+                        li {
+                            margin: 0 0.41vw !important; //5px
+
+                            font: {
+                                size: 1.083vw !important; //13px
+                            }
+
+                            &:not(:first-child)::before {
+                                margin-right: 0.83vw !important; //10px
+                            }
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (min-width: 1201px) and (max-width: 1218px) {
+
+    // 헤더
+    .header {
+
+        .fi-brands-apple {
+            font-size: 1.97vw !important ; //24px
+        }
+
+        .fi-rr-search,
+        .fi-rs-user,
+        .fi-rc-shopping-bag {
+            font-size: 1.64vw !important; //20px
+        }
+
+        .me-auto {
+            margin: 0 auto;
+
+            a {
+                margin: 0 1vw !important; //20px
+                font-size: 1vw !important; //16px
+            }
+        }
+    }
+
+    // 푸터
+    .footer {
+        height: 1500px !important;
+        .footerWrap {
+            .footerTab {
+
+                h3 {
+                    font: {
+                        size: 1.8vw !important; //23px
+                    }
+                }
+
+                ul {
+
+                    li {
+                        width: 8vw !important; //125px
+                        padding: 0.8vh 0 !important;
+                        margin: 0 1.5vw !important; //50px
+
+                        font: {
+                            size: 1.2vw !important; //17px
+                        }
+
+                        .fi-bs-arrow-up-right {
+                            font-size: 0.8vw !important; //10px
+                            margin-left: 0.8vw !important; //10px
+                        }
+                    }
+                }
+            }
+
+            .footerfont1 {
+                p {
+                    font: {
+                        size: 0.985vw !important; //12px
+                    }
+                }
+            }
+
+            h4 {
+                font: {
+                    size: 1.23vw !important; //15px
+                }
+            }
+
+            .font2BoxWrap {
+                .font2Box {
+                    p {
+                        font: {
+                            size: 1.14vw !important; //14px
+                        }
+                    }
+
+                    ul {
+                        li {
+                            font: {
+                                size: 1.14vw !important; //14px
+                            }
+                        }
+                    }
+                }
+            }
+
+            p {
+                font: {
+                    size: 1.067vw !important; //13px
+                    weight: 500;
+                }
+            }
+
+            .footerfont3 {
+
+                .font3Box {
+
+                    ul {
+                        margin: 0 0.82vw !important; //10px
+
+                        li {
+                            margin: 0 0.41vw !important; //5px
+
+                            font: {
+                                size: 1.067vw !important; //13px
+                            }
+
+                            &:not(:first-child)::before {
+                                margin-right: 0.82vw !important; //10px
+                            }
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

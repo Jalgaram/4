@@ -1,0 +1,298 @@
+@charset "utf-8";
+
+@media (max-width: 1199px) {
+    // 슬라이드
+    .mySwiper {
+
+        .swiper-slide {
+
+            div {
+                width: 41.05vw; //500px
+
+                h2 {
+                    font: {
+                        size: 3.5vw; //50px
+                    }
+                }
+
+                h4 {
+                    font: {
+                        size: 1.4vw !important; //16px
+                    }
+                }
+
+                p {
+                    font: {
+                        size: 1.5vw !important; //20px
+                    }
+                }
+
+                button {
+                    width: 9vw; //110px
+                    padding: 7px 1.23vw; //7px 15px
+                    margin: 0 0.82vw; //0 10px
+
+                    font: {
+                        size: 1.1vw !important; //16px
+                    }
+                }
+            }
+        }
+
+        .slideImg2 {
+
+            div {
+
+                button {
+                    margin: 15px 0.82vw; //15px 10px
+                }
+
+                .slide2font {
+                    left: 25%;
+                    font: {
+                        size: 1vw !important; //14px
+                    }
+                }
+            }
+        }
+
+        .slideImg3 {
+            div {
+                button {
+                    margin: 0 0.82vw; //0 10px
+                }
+
+                .slide2font {
+                    color: #6E6E73;
+
+                    font: {
+                        size: 0.985vw !important; //12px
+                        weight: 600;
+                    }
+                }
+            }
+        }
+    }
+
+    // 이너메뉴
+    .innerMenu {
+        margin-bottom: 15%;
+
+        .innerWrap {
+            ul {
+                flex-flow: row wrap;
+
+                li {
+                    margin: 5px 0;
+                }
+            }
+        }
+    }
+
+     // 중앙 슬라이드
+    .centerWrap {
+
+        .center1 {
+            .centerfontBox1 {
+
+                p {
+                    font: {
+                         size: 1.04vw !important; //20px
+                    }
+                }
+            }
+        }
+
+        .center2 {
+            .centerfontBox2 {
+                p {
+                    font: {
+                        size: 0.78vw !important; //15px
+                    }
+                }
+            }
+        }
+
+        .center5 {
+            .centerfontBox5 {
+                p {
+                    font: {
+                        size: 0.78vw !important; //15px
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+@media (min-width: 1201px) and (max-width: 1218px) {
+
+    // 슬라이드
+    .mySwiper {
+
+        .swiper-slide {
+
+            div {
+                width: 41.05vw; //500px
+
+                h2 {
+                    font: {
+                        size: 3.5vw; //50px
+                    }
+                }
+
+                h4 {
+                    font: {
+                        size: 1.4vw !important; //16px
+                    }
+                }
+
+                p {
+                    font: {
+                        size: 1.5vw !important; //20px
+                    }
+                }
+
+                button {
+                    width: 9vw; //110px
+                    padding: 7px 1.23vw; //7px 15px
+                    margin: 0 0.82vw; //0 10px
+
+                    font: {
+                        size: 1.1vw !important; //16px
+                    }
+                }
+            }
+        }
+
+        .slideImg2 {
+
+            div {
+
+                button {
+                    margin: 15px 0.82vw; //15px 10px
+                }
+
+                .slide2font {
+                    left: 25%;
+                    font: {
+                        size: 1vw !important; //14px
+                    }
+                }
+            }
+        }
+
+        .slideImg3 {
+            div {
+                button {
+                    margin: 0 0.82vw; //0 10px
+                }
+
+                .slide2font {
+                    color: #6E6E73;
+
+                    font: {
+                        size: 0.985vw !important; //12px
+                        weight: 600;
+                    }
+                }
+            }
+        }
+    }
+
+    // 이너메뉴
+    .innerMenu {
+        margin-bottom: 13%;
+
+        .innerWrap {
+            ul {
+                flex-flow: row wrap;
+
+                li {
+                    margin: 5px 0;
+
+                    img {
+                        width: auto;
+                        height: 9.9vh; //91px
+                    }
+
+                    p {
+                        margin-top: 1.63vh; //15px
+
+                        font: {
+                            size: 1.31vw; //16px
+                            weight: 400;
+                        }
+
+                        color: #1D1D1F;
+                    }
+                }
+            }
+        }
+    }
+
+    //신제품 
+    .newWrap {
+        .newBoxWrap {
+            .newBox1 {
+                .new1 {
+                    width: 22vw; //404px
+                }
+            }
+
+            .newBox2 {
+                .new2 {
+                    .newfontBox {
+                        margin: 5vh 0;
+                    }
+                }
+
+                .new3 {
+                    img {
+                        width: 18vw; //283px
+                        height: auto;
+                    }
+                }
+            }
+        }
+    }
+
+
+    // 중앙 슬라이드
+    .centerWrap {
+
+        .center1 {
+            .centerfontBox1 {
+
+                p {
+                    font: {
+                         size: 1.04vw !important; //20px
+                    }
+                }
+            }
+        }
+
+        .center2 {
+            .centerfontBox2 {
+                p {
+                    font: {
+                        size: 0.78vw !important; //15px
+                    }
+                }
+            }
+        }
+
+        .center5 {
+            .centerfontBox5 {
+                p {
+                    font: {
+                        size: 0.78vw !important; //15px
+                    }
+                }
+            }
+        }
+    }
+
+}

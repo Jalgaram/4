@@ -1,11 +1,12 @@
 import React, { useState } from 'react'
 import { Button, Col, Container, Row } from 'react-bootstrap'
-import data from './data';
 
-const DetailContent = () => {
-    const product = data[0];
+const DetailContent = ({ product }) => {
     const [selectedIndex, setSelectedIndex] = useState(0);
     const [hovername, setHovername] = useState(null);
+
+    if (!product) return null
+
     return (
         <div className='detailContent_wrap'>
             <div className="detailheader">
@@ -17,42 +18,79 @@ const DetailContent = () => {
                 <Row className="detailBox1">
                     <Col xs={6} className="detailFontBox">
                         <div className="detailfontWrap">
-                            <h6>New</h6>
-                            <h2>MagSafe형 iPhone 16 Pro Max <br />실리콘 케이스</h2>
-                            <p>₩69,000 <span>할부 옵션 제공</span></p>
+                            <h6>{product.smallTitle}</h6>
+                            <h2 style={{ whiteSpace: 'pre-line' }}>{product.title} {product.colors?.[selectedIndex]?.name && ` - ${product.colors[selectedIndex].name}`}</h2>
+                            <p>₩{product.price.toLocaleString()} <span>할부 옵션 제공</span></p>
                         </div>
 
-                        <div className="select-wrapper">
-                            <label htmlFor="model" className="select-label">크기</label>
+                        {product.modelType === "iPhone" && (
+                            <div className="select-wrapper">
+                                <label htmlFor="model" className="select-label">크기</label>
 
-                            <select
-                                name="model"
-                                id="model"
-                                style={{ cursor: "pointer" }} defaultValue="iPhone 16 Pro Max">
-                                <option value="iPhone 16">iPhone 16</option>
-                                <option value="iPhone 16 Plus">iPhone 16 Plus</option>
-                                <option value="iPhone 16 Pro">iPhone 16 Pro</option>
-                                <option value="iPhone 16 Pro Max">iPhone 16 Pro Max</option>
-                            </select>
-                        </div>
+                                <select
+                                    name="model"
+                                    id="model"
+                                    style={{ cursor: "pointer" }} defaultValue="iPhone 16 Pro Max">
+                                    <option value="iPhone 16">iPhone 16</option>
+                                    <option value="iPhone 16 Plus">iPhone 16 Plus</option>
+                                    <option value="iPhone 16 Pro">iPhone 16 Pro</option>
+                                    <option value="iPhone 16 Pro Max">iPhone 16 Pro Max</option>
+                                </select>
+                            </div>
+                        )}
 
-                        <h4>색상 - <span>{product.colors[hovername ?? selectedIndex].name}</span>
-                        </h4>
+                         {product.modelType === "iPhone2" && (
+                            <div className="select-wrapper">
+                                <label htmlFor="model" className="select-label">크기</label>
 
-                        <div className="color">
-                            {product.colors.map((color, index) => (
-                                <img
-                                    key={index}
-                                    src={color.src}
-                                    alt={color.name}
-                                    className={selectedIndex === index ? "active" : ""}
-                                    onClick={() => setSelectedIndex(index)}
-                                    onMouseEnter={() => setHovername(index)}
-                                    onMouseLeave={() => setHovername(null)}
-                                />
-                            ))}
+                                <select
+                                    name="model"
+                                    id="model"
+                                    style={{ cursor: "pointer" }} defaultValue="iPhone 16">
+                                    <option value="iPhone 16">iPhone 16</option>
+                                    <option value="iPhone 16 Plus">iPhone 16 Plus</option>
+                                    <option value="iPhone 16 Pro">iPhone 16 Pro</option>
+                                    <option value="iPhone 16 Pro Max">iPhone 16 Pro Max</option>
+                                </select>
+                            </div>
+                        )}
 
-                        </div>
+                        {product.modelType === "iPad" && (
+                            <div className="select-wrapper">
+                                <label htmlFor="model" className="select-label">언어</label>
+
+                                <select
+                                    name="model"
+                                    id="model"
+                                    style={{ cursor: "pointer" }} defaultValue="한국어">
+                                    <option value="iPhone 16">중국어(병음)</option>
+                                    <option value="iPhone 16 Plus">일본어</option>
+                                    <option value="iPhone 16 Pro">한국어</option>
+                                    <option value="iPhone 16 Pro Max">영어(미국)</option>
+                                </select>
+                            </div>
+                        )}
+
+
+                        {product.colors && (
+                            <>
+                                <h4>색상 - <span>{product.colors[hovername ?? selectedIndex].name}</span></h4>
+
+                                <div className="color">
+                                    {product.colors.map((color, index) => (
+                                        <img
+                                            key={index}
+                                            src={color.src}
+                                            alt={color.name}
+                                            className={selectedIndex === index ? "active" : ""}
+                                            onClick={() => setSelectedIndex(index)}
+                                            onMouseEnter={() => setHovername(index)}
+                                            onMouseLeave={() => setHovername(null)}
+                                        />
+                                    ))}
+                                </div>
+                            </>
+                        )}
 
                         <hr />
 
@@ -68,7 +106,12 @@ const DetailContent = () => {
                     </Col>
 
                     <Col xs={4} className="detailImgBox">
-                        <img src={product.detailimgs[selectedIndex]} alt="악세" />
+                        {product.colors && product.colors.length > 0 ? (
+                            <img src={product.detailimgs[selectedIndex]} alt="악세" />
+                        ) : (
+                            <img src={product.detailimgs} alt="악세" />
+                        )}
+                        
                     </Col>
                 </Row>
             </Container>

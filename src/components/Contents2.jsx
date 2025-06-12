@@ -14,9 +14,9 @@ const Contents2 = (props) => {
 
             <div className="contentfont">
                 <h6>{contents2.smallTitle}</h6>
-                <h4>{contents2.title.length > 50
-                    ? contents2.title.slice(0, 50) + ' ...'
-                    : contents2.title}</h4>
+                <h4>{contents2.mainTitle.length > 50
+                    ? contents2.mainTitle.slice(0, 50) + ' ...'
+                    : contents2.mainTitle}</h4>
                 <p>₩{contents2.price.toLocaleString()}</p>
             </div>
         </Col>
