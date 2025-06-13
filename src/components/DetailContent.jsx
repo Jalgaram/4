@@ -1,7 +1,13 @@
 import React, { useState } from 'react'
 import { Button, Col, Container, Row } from 'react-bootstrap'
+import { addItem } from './store';
+import { useDispatch } from 'react-redux';
+import { Navigate, useNavigate } from 'react-router-dom';
 
 const DetailContent = ({ product }) => {
+    const dispatch = useDispatch();
+    const navigate = useNavigate();
+
     const [selectedIndex, setSelectedIndex] = useState(0);
     const [hovername, setHovername] = useState(null);
 
@@ -20,7 +26,13 @@ const DetailContent = ({ product }) => {
                         <div className="detailfontWrap">
                             <h6>{product.smallTitle}</h6>
                             <h2 style={{ whiteSpace: 'pre-line' }}>{product.title} {product.colors?.[selectedIndex]?.name && ` - ${product.colors[selectedIndex].name}`}</h2>
-                            <p>₩{product.price.toLocaleString()} <span>할부 옵션 제공</span></p>
+                            <p>₩{product.price.toLocaleString()} <span onClick={(e) => {
+                                e.preventDefault();
+                                window.open(
+                                    '/img/Untitled.png',
+                                    '할부옵션제공안내',
+                                    'width=580,height=882');
+                            }}>할부 옵션 제공</span></p>
                         </div>
 
                         {product.modelType === "iPhone" && (
@@ -39,7 +51,7 @@ const DetailContent = ({ product }) => {
                             </div>
                         )}
 
-                         {product.modelType === "iPhone2" && (
+                        {product.modelType === "iPhone2" && (
                             <div className="select-wrapper">
                                 <label htmlFor="model" className="select-label">크기</label>
 
@@ -95,7 +107,15 @@ const DetailContent = ({ product }) => {
                         <hr />
 
                         <div className="detailBtnBox">
-                            <Button variant="primary" className='detailBtn1'>장바구니에 담기</Button>
+                            <Button variant="primary" className='detailBtn1' onClick={() => {
+                                dispatch(addItem({
+                                    id: product.id, 
+                                    img: product.img,
+                                    mainTitle: product.mainTitle, amount: product.amount,
+                                    price: product.price
+                                }));
+                                navigate('/장바구니');
+                            }}>장바구니에 담기</Button>
                             <Button variant="outline-primary" className='detailBtn2'>구매하기</Button>
                         </div>
 
@@ -111,7 +131,7 @@ const DetailContent = ({ product }) => {
                         ) : (
                             <img src={product.detailimgs} alt="악세" />
                         )}
-                        
+
                     </Col>
                 </Row>
             </Container>

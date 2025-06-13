@@ -713,7 +713,6 @@
 }
 
 
-
 // 악세서리
 .contentWrap {
   @include contents-width;
@@ -1014,7 +1013,8 @@
   }
 
   .serviceContent {
-    margin: 4% 0;
+    @include contents-width;
+    margin: 4% auto;
     text-align: center;
 
     h2 {
@@ -1028,24 +1028,197 @@
     }
 
     .serviceRow {
-      margin: 4% 0;
+      margin: 5% 0;
       width: 100%;
+      justify-content: center;
 
       .serviceCol {
-        height: 183px;
+        height: 200px;
+        padding: 0;
         background-color: #F5F5F7;
         border-radius: 15px;
         @include shadow;
-
         cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
         transition: transform 0.3s ease, box-shadow 0.3s ease;
 
         &:hover {
           transform: translateY(-10px);
           box-shadow: 0 0.52vw 1.04vw rgba(0, 0, 0, 0.15);
+
+          p {
+            text-decoration: underline;
+          }
+        }
+
+        img[alt="계정"] {
+          width: 4.16vw;
+          height: auto;
+          margin-bottom: 5px;
+        }
+
+        img[alt="수리"],
+        img[alt="청구"] {
+          width: 3.125vw;
+          height: auto;
+          margin-bottom: 15px;
+        }
+
+        p {
+          margin: 0;
+          color: #0077ED;
+          font-weight: 500;
+        }
+      }
+    }
+  }
+
+  .serviceContent2 {
+    @include contents-width;
+    margin: 5% auto;
+
+    h2 {
+      font: {
+        size: 2.08vw; //40px
+        weight: 700;
+      }
+
+      color: #1D1D1F;
+      cursor: default;
+    }
+
+    .input-group {
+      margin: 4% auto;
+
+      .serviceInput {
+        padding: 10px 0.528vw;
+      }
+
+      #button-addon2 {
+        .fi-rs-search {
+          font-size: 1.04vw;
+        }
+
+        &:hover {
+          background-color: #0077ED;
+        }
+      }
+    }
+  }
+}
+
+
+//장바구니
+.cartfont1 {
+  @include contents-width;
+  margin: 5% auto;
+  text-align: center;
+
+  h2 {
+    font: {
+      size: 1.82vw;
+      weight: 600;
+    }
+    cursor: default;
+    color: #1D1D1F;
+  }
+
+  p {
+    margin: 2% 0;
+
+    font: {
+      size: 0.83vw;
+      weight: 500;
+    }
+    cursor: default;
+    color: #6E6E73;
+  }
+
+  .cartBtn1 {
+    width: 20.83vw;
+    font-size: 0.83vw;
+    padding: 10px 0;
+  }
+}
+
+.cartTable {
+  @include contents-width;
+  margin: 4% auto;
+  color: #1D1D1F;
+
+  thead {
+    text-align: center;
+    vertical-align: middle;
+
+    th {
+      padding: 20px 0;
+      cursor: default;
+    }
+  }
+
+  tbody {
+    text-align: center;
+    vertical-align: middle;
+    color: #1D1D1F;
+
+    .cartTitle {
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+
+    .cartCount {
+      button{
+        border: none;
+        background-color: transparent;
+        border-radius: 5px;
+        text-align: center;
+        vertical-align: middle;
+        padding: 3px;
+      }
+
+      span{
+        margin: 0 5px;
+        font: {
+          size: 16px;
+          weight: 500;
+        }
+        cursor: default;
+      }
+
+      .cartDelt {
+        margin: 10px 0;
+
+        font: {
+          size: 14px;
+          weight: 500;
+        }
+
+        cursor: pointer;
+        color: #0077ED;
+
+        &:hover {
+          text-decoration: underline;
         }
       }
     }
 
+
+  }
+}
+
+.cartBtns {
+  @include contents-width;
+  margin: 4% auto;
+  text-align: center;
+
+  .cartBtn2 {
+    font-size: 0.83vw;
+    width: 20.83vw;
+    padding: 10px 0;
   }
 }

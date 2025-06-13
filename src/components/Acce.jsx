@@ -14,13 +14,16 @@ const Acce = () => {
     return (
         <>
             <Header />
+
+            <hr style={{ margin: 0 }} />
+
             <div className='contentWrap'>
                 <div className="contentTitle">
                     <h3>액세서리 상품</h3>
                 </div>
 
                 <Container>
-                    <Row className='contentBigbox' style={{rowGap: "20px"}}>
+                    <Row className='contentBigbox' style={{rowGap: "50px"}}>
                         {acceData.length === 0 ? (
                             <p style={{ margin: 0, padding: 0 }}>해당 상품은 준비중입니다 :(</p>
                         ) : (

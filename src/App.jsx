@@ -19,6 +19,7 @@ import AirTag from './components/AirTag';
 import Acce from './components/Acce';
 import Enter from './components/Enter';
 import Service from './components/Service';
+import Cart from './components/Cart';
 
 function App() {
 
@@ -38,6 +39,7 @@ function App() {
           <Route path='/액세서리' element={<Acce />}/>
           <Route path='/엔터테인먼트' element={<Enter />}/>
           <Route path='/고객지원' element={<Service />}/>
+          <Route path='/장바구니' element={<Cart />}/>
         </Routes>
       </div>
   );

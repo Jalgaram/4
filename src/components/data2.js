@@ -6,6 +6,7 @@ let data2 = [
         mainTitle: "Herschel Burrard Organizer Tech - 스누피 체리 블라썸 블랙",
         title: "Herschel Burrard Organizer Tech - 스누피 체리 블라썸 블랙",
         price: 89000,
+        amount: 1,
 
         detailimgs: "/img/악세5-1.png",
 
@@ -37,6 +38,7 @@ let data2 = [
         mainTitle: "PopSockets Magsafe Grip (iPhone) 스누피 체리 블라섬 - 핑크",
         title: "PopSockets Magsafe Grip (iPhone) 스누피 체리 블라섬",
         price: 59000,
+        amount: 1,
 
         colors: [{ src: "/img/악세6_COLOR1.jpg", name: "핑크" },
         { src: "/img/악세6_COLOR2.jpg", name: "화이트" },
@@ -73,6 +75,7 @@ let data2 = [
         mainTitle: "PopSockets Magsafe Grip (iPhone) 스누피 체리 블라섬 - 화이트",
         title: "PopSockets Magsafe Grip (iPhone) 스누피 체리 블라섬 ",
         price: 59000,
+        amount: 1,
 
          colors: [{ src: "/img/악세6_COLOR2.jpg", name: "화이트" },
         { src: "/img/악세6_COLOR1.jpg", name: "핑크" },
@@ -109,6 +112,7 @@ let data2 = [
         mainTitle: "Satechi Magnetic Wallet Stand(MagSafe 호환) - 스누피 체리 블라섬 블랙",
         title: "Satechi Magnetic Wallet Stand(MagSafe 호환) - 스누피 체리 블라섬 블랙",
         price: 69000,
+        amount: 1,
 
         detailimgs: "/img/악세8-1.png",
 

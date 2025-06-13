@@ -38,7 +38,7 @@ const Header = () => {
           <Nav>
             <Nav.Link><i className="fi fi-rr-search"></i></Nav.Link>
             <Nav.Link ><i className="fi fi-rs-user"></i></Nav.Link>
-            <Nav.Link eventKey={2}><i className="fi fi-rc-shopping-bag"></i></Nav.Link>
+            <Nav.Link  as={Link} to="/장바구니" style={{textDecoration: "none"}} eventKey={2}><i className="fi fi-rc-shopping-bag"></i></Nav.Link>
           </Nav>
         </Navbar.Collapse>
       

@@ -14,6 +14,9 @@ const AirPods = () => {
     return (
         <>
             <Header />
+
+            <hr style={{ margin: 0 }} />
+
             <div className='contentWrap'>
                 <div className="contentTitle">
                     <h3>AirPods 상품</h3>

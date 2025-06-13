@@ -14,6 +14,9 @@ const Mac = () => {
     return (
         <>
             <Header />
+
+            <hr style={{ margin: 0 }} />
+
             <div className='contentWrap'>
                 <div className="contentTitle">
                     <h3>Mac 상품</h3>

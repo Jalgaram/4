@@ -14,6 +14,9 @@ const TV = () => {
     return (
         <>
             <Header />
+
+            <hr style={{ margin: 0 }} />
+
             <div className='contentWrap'>
                 <div className="contentTitle">
                     <h3>TV 및 홈 상품</h3>

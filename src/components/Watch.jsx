@@ -14,6 +14,9 @@ const Watch = () => {
     return (
         <>
             <Header />
+
+            <hr style={{ margin: 0 }} />
+
             <div className='contentWrap'>
                 <div className="contentTitle">
                     <h3>Watch 상품</h3>

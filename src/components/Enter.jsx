@@ -14,6 +14,9 @@ const Enter = () => {
     return (
         <>
             <Header />
+
+            <hr style={{ margin: 0 }} />
+
             <div className='contentWrap'>
                 <div className="contentTitle">
                     <h3>엔터테인먼트</h3>

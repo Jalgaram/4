@@ -14,6 +14,9 @@ const IPad = () => {
     return (
         <>
             <Header />
+
+            <hr style={{ margin: 0 }} />
+
             <div className='contentWrap'>
                 <div className="contentTitle">
                     <h3>iPad 상품</h3>

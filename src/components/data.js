@@ -7,6 +7,7 @@ let data = [
         mainTitle: "MagSage형 iPhone 16 Pro Max \n 실리콘 케이스 - 피오니",
         title: "MagSage형 iPhone 16 Pro Max \n 실리콘 케이스",
         price: 69000,
+        amount: 1,
 
         colors: [{ src: "/img/악세1_COLOR2.jpg", name: "피오니" },
         { src: "/img/악세1_COLOR1.jpg", name: "페리윙클" },
@@ -47,6 +48,7 @@ let data = [
         mainTitle: "Tech21 FlexQuartz \n (iPhone 16 Pro Max) (MagSafe 호환) - 스누피 체리 블라썸",
         title: "Tech21 FlexQuartz \n (iPhone 16 Pro Max) (MagSafe 호환) - 스누피 체리 블라썸",
         price: 79000,
+        amount: 1,
 
         detailimgs: "/img/악세2-1.png",
 
@@ -80,6 +82,7 @@ let data = [
         mainTitle: "Tech21 EvoArt Snoopy Case for AirPods Pro 2 - 체리 블라썸",
         title: "Tech21 EvoArt Snoopy Case for AirPods Pro 2 - 체리 블라썸",
         price: 47000,
+        amount: 1,
 
         detailimgs: "/img/악세3-1.png",
 
@@ -107,6 +110,7 @@ let data = [
         mainTitle: "Tech21 EvoArt Snoopy Case (AirPods Max) - 체리 블라썸",
         title: "Tech21 EvoArt Snoopy Case (AirPods Max) - 체리 블라썸",
         price: 59000,
+        amount: 1,
 
         detailimgs: "/img/악세4-1.png",
 

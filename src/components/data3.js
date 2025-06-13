@@ -5,6 +5,7 @@ let data3 = [
         mainTitle: "iPad(A16모델)용 Magic Keyboard Folio",
         title: "iPad(A16모델)용 Magic Keyboard Folio",
         price: 380000,
+        amount: 1,
 
         detailimgs: "/img/악세9-1.png",
 
@@ -31,6 +32,7 @@ let data3 = [
         mainTitle: "MagSeafe형 iPhone 16 투명 케이스",
         title: "MagSeafe형 iPhone 16 투명 케이스",
         price: 69000,
+        amount: 1,
 
         detailimgs: "/img/악세10-1.png",
 
@@ -56,6 +58,7 @@ let data3 = [
         mainTitle: "49mm 밀레니즈 루프 (M) - 내추럴 티타늄",
         title: "49mm 밀레니즈 루프 (M)",
         price: 285000,
+        amount: 1,
 
        colors: [{ src: "/img/악세11_COLOR1.jpg", name: "내추럴 티타늄" },
         { src: "/img/악세11_COLOR2.jpg", name: "블랙 티타늄" },],
@@ -82,6 +85,7 @@ let data3 = [
         mainTitle: "Beats USB-C-USV-C 우븐 케이블 \n (1.5m) - 래피드 레드",
         title: "Beats USB-C-USV-C 우븐 케이블 \n (1.5m)",
         price: 69000,
+        amount: 1,
 
         colors: [{ src: "/img/악세12_COLOR1.jpg", name: "레피드 레드" },
         { src: "/img/악세12_COLOR2.jpg", name: "볼트 블랙" },
