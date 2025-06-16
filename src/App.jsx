@@ -20,6 +20,7 @@ import Acce from './components/Acce';
 import Enter from './components/Enter';
 import Service from './components/Service';
 import Cart from './components/Cart';
+import Login from './components/Login';
 
 function App() {
 
@@ -40,6 +41,7 @@ function App() {
           <Route path='/엔터테인먼트' element={<Enter />}/>
           <Route path='/고객지원' element={<Service />}/>
           <Route path='/장바구니' element={<Cart />}/>
+           <Route path='/Login' element={<Login />}/>
         </Routes>
       </div>
   );

@@ -4,7 +4,7 @@ let data = [
         img: "/img/악세1.png",
         imgColor: "/img/악세1-color.png",
         smallTitle: "New",
-        mainTitle: "MagSage형 iPhone 16 Pro Max \n 실리콘 케이스 - 피오니",
+        mainTitle: "MagSage형 iPhone 16 Pro Max \n 실리콘 케이스",
         title: "MagSage형 iPhone 16 Pro Max \n 실리콘 케이스",
         price: 69000,
         amount: 1,

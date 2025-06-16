@@ -28,25 +28,33 @@ let cart = createSlice(
         ],
         reducers: {
             addCount(state, action) {
-                let idx = action.payload;
-                ++state[idx].amount;
+                let num = action.payload;
+                ++state[num].amount;
             },
             minusCount(state, action) {
-                let idx = action.payload;
-                if (state[idx].amount > 1) {
-                    --state[idx].amount
+                let num = action.payload;
+                if (state[num].amount > 1) {
+                    --state[num].amount
                 };
             },
             sortName(state) {
                 state.sort((a, b) => a.item > b.item ? 1 : -1);
             },
             addItem(state, action) {
-                state.push(action.payload);
+                let num = state.findIndex(a => a.id === action.payload.id);
+                if(num >= 0){
+                    state[num].amount++;
+                } else {
+                    state.push(action.payload);
+                }
+            },
+            removeItem(state, action){
+                state.splice(action.payload, 1);
             }
         }
     });
 
-export let { addCount, sortName, addItem, minusCount } = cart.actions;
+export let { addCount, sortName, addItem, minusCount, removeItem } = cart.actions;
 
 export default configureStore({
     reducer: {
