@@ -1,14 +1,14 @@
 let data2 = [
     {
         id: 4,
-        img: "/img/악세9.png",
+        img: process.env.PUBLIC_URL + "/img/악세9.png",
         smallTitle: "Apple 독점",
         mainTitle: "Herschel Burrard Organizer Tech - 스누피 체리 블라썸 블랙",
         title: "Herschel Burrard Organizer Tech - 스누피 체리 블라썸 블랙",
         price: 89000,
         amount: 1,
 
-        detailimgs: "/img/악세5-1.png",
+        detailimgs: process.env.PUBLIC_URL + "/img/악세5-1.png",
 
         outline1: "Herschel Burrard Organizer Tech로 편하게 디지털 라이프를 즐기세요. 지퍼를 끝까지 열 수 있는 콤팩트한 디자인 덕분에 테크 액세서리를 쉽게 넣고 꺼낼 수 있고, 이동할 때는 케이블, 충전기, 소형 기기들을 안전하고 깔끔하게 휴대할 수 있습니다.",
 
@@ -33,18 +33,24 @@ let data2 = [
 
     {
         id: 5,
-        img: "/img/악세10.png",
+        img: process.env.PUBLIC_URL + "/img/악세10.png",
         smallTitle: "Apple 독점",
-        mainTitle: "PopSockets Magsafe Grip (iPhone) 스누피 체리 블라섬 - 핑크",
+        mainTitle: "PopSockets Magsafe Grip (iPhone) 스누피 체리 블라섬",
         title: "PopSockets Magsafe Grip (iPhone) 스누피 체리 블라섬",
         price: 59000,
         amount: 1,
 
-        colors: [{ src: "/img/악세6_COLOR1.jpg", name: "핑크" },
-        { src: "/img/악세6_COLOR2.jpg", name: "화이트" },
-        { src: "/img/악세6_COLOR3.jpg", name: "라이트 핑크" }],
+        colors: [
+            { src: process.env.PUBLIC_URL + "/img/악세6_COLOR1.jpg", name: "핑크" },
+            { src: process.env.PUBLIC_URL + "/img/악세6_COLOR2.jpg", name: "화이트" },
+            { src: process.env.PUBLIC_URL + "/img/악세6_COLOR3.jpg", name: "라이트 핑크" }
+        ],
 
-        detailimgs: ["/img/악세6-1.png", "/img/악세6-2.png", "/img/악세6-3.png"],
+        detailimgs: [
+            process.env.PUBLIC_URL +"/img/악세6-1.png", 
+            process.env.PUBLIC_URL +"/img/악세6-2.png", 
+            process.env.PUBLIC_URL +"/img/악세6-3.png"
+        ],
 
         outline1: "PopSockets MagSafe Grip (iPhone)은 자석으로 탈부착되기 때문에 다양한 PopSockets MagSafe 액세서리를 손쉽게 바꿔 장착할 수 있습니다. 어떤 케이스든 MagSafe와 함께 사용할 수 있도록 자석 어댑터 링도 포함되어 있습니다.",
 
@@ -70,18 +76,24 @@ let data2 = [
 
     {
         id: 6,
-        img: "/img/악세11.png",
+        img: process.env.PUBLIC_URL + "/img/악세11.png",
         smallTitle: "Apple 독점",
-        mainTitle: "PopSockets Magsafe Grip (iPhone) 스누피 체리 블라섬 - 화이트",
+        mainTitle: "PopSockets Magsafe Grip (iPhone) 스누피 체리 블라섬",
         title: "PopSockets Magsafe Grip (iPhone) 스누피 체리 블라섬 ",
         price: 59000,
         amount: 1,
 
-         colors: [{ src: "/img/악세6_COLOR2.jpg", name: "화이트" },
-        { src: "/img/악세6_COLOR1.jpg", name: "핑크" },
-        { src: "/img/악세6_COLOR3.jpg", name: "라이트 핑크" }],
+        colors: [
+            { src: process.env.PUBLIC_URL + "/img/악세6_COLOR2.jpg", name: "화이트" },
+            { src: process.env.PUBLIC_URL + "/img/악세6_COLOR1.jpg", name: "핑크" },
+            { src: process.env.PUBLIC_URL + "/img/악세6_COLOR3.jpg", name: "라이트 핑크" }
+        ],
 
-        detailimgs: ["/img/악세6-1.png", "/img/악세6-2.png", "/img/악세6-3.png"],
+        detailimgs: [
+            process.env.PUBLIC_URL +"/img/악세6-1.png", 
+            process.env.PUBLIC_URL +"/img/악세6-2.png", 
+            process.env.PUBLIC_URL +"/img/악세6-3.png"
+        ],
 
         outline1: "PopSockets MagSafe Grip (iPhone)은 자석으로 탈부착되기 때문에 다양한 PopSockets MagSafe 액세서리를 손쉽게 바꿔 장착할 수 있습니다. 어떤 케이스든 MagSafe와 함께 사용할 수 있도록 자석 어댑터 링도 포함되어 있습니다.",
 
@@ -107,20 +119,20 @@ let data2 = [
 
     {
         id: 7,
-        img: "/img/악세12.png",
+        img: process.env.PUBLIC_URL + "/img/악세12.png",
         smallTitle: "Apple 독점",
         mainTitle: "Satechi Magnetic Wallet Stand(MagSafe 호환) - 스누피 체리 블라섬 블랙",
         title: "Satechi Magnetic Wallet Stand(MagSafe 호환) - 스누피 체리 블라섬 블랙",
         price: 69000,
         amount: 1,
 
-        detailimgs: "/img/악세8-1.png",
+        detailimgs: process.env.PUBLIC_URL + "/img/악세8-1.png",
 
         outline1: "Satechi Magnetic Wallet Stand는 스타일과 기능성, 지속가능성을 모두 갖추고 있습니다. 일상에서 편리함을 가져다주는 유용한 필수 액세서리죠. 세련된 비건 가죽 소재와 MagSafe 호환 기술이 적용된 이 월렛은 iPhone에 가볍고도 단단하게 부착되기 때문에 카드, 신분증, 현금 등을 편리하게 휴대할 수 있습니다. 이 다용도 마그네틱 월렛은 iPhone 스탠드로도 활용이 가능한 디자인이기 때문에 핸즈프리의 자유로움을 느끼며 가로 및 세로 모드로 인터넷을 이용하고, 동영상을 스트리밍하고, FaceTime 통화를 즐길 수 있습니다.",
         outline2: "기능성 더블 플랩 디자인의 월렛으로 4장의 카드를 동시에 휴대할 수 있습니다. 핸드폰에서 월렛을 떼어내지 않아도 간편하게 닫고 열어 카드를 수납할 수 있습니다. 간편하게 정리하고 가볍게 이동하기에 완벽한 액세서리입니다.",
         outline3: "긁힘 방지 기능이 적용된 프리미엄 비건 가죽 소재를 사용한 이 마그네틱 월렛은 견고하고 스타일리시할 뿐 아니라 탄소 발자국을 줄이는 데도 도움을 줍니다. 환경을 생각하는 여러분을 위한 최고의 선택입니다.",
         outline4: "자유로운 조절을 통해 가로 및 세로의 2가지 시청 모드를 지원하는 스탠드로 정말 손쉬운 핸즈프리의 자유로움을 만끽하세요. 월렛의 힌지가 160°까지 벌어져 가장 편안한 시청 경험을 선사합니다.",
-    
+
 
         highlight1: "카드 4장 수납",
         highlight2: "MagSafe 호환",

@@ -25,7 +25,7 @@ const New = () => {
               <p>₩990,000부터</p>
             </div>
 
-            <img src="/img/new2.png" alt="아이폰16e" />
+            <img src={process.env.PUBLIC_URL +"/img/new2.png"} alt="아이폰16e" />
           </Row>
 
           <Row className="new new3">
@@ -35,7 +35,7 @@ const New = () => {
               <p>₩949,000부터</p>
             </div>
 
-            <img src="/img/new3.png" alt="아이패드에어" />
+            <img src={process.env.PUBLIC_URL +"/img/new3.png"} alt="아이패드에어" />
           </Row>
         </Col>
       </Container>

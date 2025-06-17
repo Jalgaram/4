@@ -29,7 +29,7 @@ const DetailContent = ({ product }) => {
                             <p>₩{product.price.toLocaleString()} <span onClick={(e) => {
                                 e.preventDefault();
                                 window.open(
-                                    '/img/Untitled.png',
+                                    process.env.PUBLIC_URL +'/img/Untitled.png',
                                     '할부옵션제공안내',
                                     'width=580,height=882');
                             }}>할부 옵션 제공</span></p>
@@ -114,7 +114,7 @@ const DetailContent = ({ product }) => {
                                     mainTitle: product.mainTitle, amount: product.amount,
                                     price: product.price
                                 }));
-                                navigate('/장바구니');
+                                navigate('/Cart');
                             }}>장바구니에 담기</Button>
                             <Button variant="outline-primary" className='detailBtn2'>구매하기</Button>
                         </div>

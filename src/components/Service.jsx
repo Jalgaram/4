@@ -9,7 +9,7 @@ const Service = () => {
             <Header />
 
             <div className="serviceWrap">
-                <img src="/img/서비스.jpg" alt="서비스" />
+                <img src={process.env.PUBLIC_URL +"/img/서비스.jpg"} alt="서비스" />
 
                 <div className="serviceContent">
                     <h2>Apple 지원</h2>
@@ -17,17 +17,17 @@ const Service = () => {
                     <Container>
                         <Row className='serviceRow' style={{ gap: '1.56vw' }}>
                             <Col className='serviceCol' md={3}>
-                                <img src="/img/계정.svg" alt="계정" />
+                                <img src={process.env.PUBLIC_URL +"/img/계정.svg"} alt="계정" />
                                 <p>Apple 계정 암호를 잊어버림</p>
                             </Col>
 
                             <Col className='serviceCol' md={3}>
-                                <img src="/img/수리.svg" alt="수리" />
+                                <img src={process.env.PUBLIC_URL +"/img/수리.svg"} alt="수리" />
                                 <p>Apple 수리</p>
                             </Col>
 
                             <Col className='serviceCol' md={3}>
-                                <img src="/img/청구.svg" alt="청구" />
+                                <img src={process.env.PUBLIC_URL +"/img/청구.svg"} alt="청구" />
                                 <p>청구 및 구독</p>
                             </Col>
                         </Row>

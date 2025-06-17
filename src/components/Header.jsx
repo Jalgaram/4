@@ -29,16 +29,16 @@ const Header = () => {
             <Nav.Link as={Link} to="/Watch" style={{textDecoration: "none"}}>Watch</Nav.Link>
             <Nav.Link as={Link} to="/AirPods" style={{textDecoration: "none"}}>AirPods</Nav.Link>
             <Nav.Link as={Link} to="/Vision" style={{textDecoration: "none"}}>Vision</Nav.Link>
-            <Nav.Link as={Link} to="/TV및홈" style={{textDecoration: "none"}}>TV 및 홈</Nav.Link>
-            <Nav.Link as={Link} to="/엔터테인먼트" style={{textDecoration: "none"}}>엔터테인먼트</Nav.Link>
-            <Nav.Link as={Link} to="/액세서리" style={{textDecoration: "none"}}>액세서리</Nav.Link>
-            <Nav.Link as={Link} to="/고객지원" style={{textDecoration: "none"}}>고객지원</Nav.Link>
+            <Nav.Link as={Link} to="/TV&Home" style={{textDecoration: "none"}}>TV 및 홈</Nav.Link>
+            <Nav.Link as={Link} to="/Enter" style={{textDecoration: "none"}}>엔터테인먼트</Nav.Link>
+            <Nav.Link as={Link} to="/Acce" style={{textDecoration: "none"}}>액세서리</Nav.Link>
+            <Nav.Link as={Link} to="/Service" style={{textDecoration: "none"}}>고객지원</Nav.Link>
           </Nav>
 
           <Nav>
             <Nav.Link><i className="fi fi-rr-search"></i></Nav.Link>
             <Nav.Link as={Link} to="/Login" style={{textDecoration: "none"}} ><i className="fi fi-rs-user"></i></Nav.Link>
-            <Nav.Link  as={Link} to="/장바구니" style={{textDecoration: "none"}} eventKey={2}><i className="fi fi-rc-shopping-bag"></i></Nav.Link>
+            <Nav.Link  as={Link} to="/Cart" style={{textDecoration: "none"}} eventKey={2}><i className="fi fi-rc-shopping-bag"></i></Nav.Link>
           </Nav>
         </Navbar.Collapse>
       

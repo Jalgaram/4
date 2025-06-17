@@ -11,13 +11,12 @@ import store from './components/store';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Provider store = {store} >
-      <BrowserRouter>
+    <Provider store = {store}>
+      <BrowserRouter basename='applestore'>
         <ScrollToTop />
         <App />
       </BrowserRouter>
     </Provider>
-
   </React.StrictMode>
 );
 

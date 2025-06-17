@@ -401,7 +401,7 @@
     .login-content {
         @include contents-width;
         @include margin-auto;
-        margin-top: 4%;
+        margin-top: 5%;
 
         h4 {
             text-align: center;
@@ -442,7 +442,7 @@
                 }
             }
 
-            .passwrod-box {
+            .password-box {
                 width: 40%;
                 @include margin-auto;
 
@@ -554,13 +554,18 @@
 
 .login-footerfontWrap {
     @include full-width;
+    height: 170px;
     @include margin-auto;
     background-color: #f5f5f7;
 
     .login-footerfont2 {
         @include contents-width;
+        height: 100%;
         @include margin-auto;
         padding: 1% 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
 
         p {
             margin: 0;

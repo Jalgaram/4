@@ -251,7 +251,8 @@
 .newWrap {
   @include contents-width;
   @include margin-auto;
-  padding: 5% 0;
+  padding: 0;
+  padding-bottom: 5%;
   text-align: center;
 
   h3 {
@@ -747,7 +748,7 @@
 
   }
 
-  .contentBigBox {
+  .contentBigbox {
     width: 100%;
     margin: 4% 0;
     display: flex;

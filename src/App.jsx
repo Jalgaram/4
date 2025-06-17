@@ -35,13 +35,13 @@ function App() {
           <Route path='/Watch' element={<Watch />}/>
           <Route path='/AirPods' element={<AirPods />}/>
           <Route path='/Vision' element={<Vision />}/>
-          <Route path='/TV및홈' element={<TV />}/>
+          <Route path='/TV&Home' element={<TV />}/>
           <Route path='/AirTag' element={<AirTag />}/>
-          <Route path='/액세서리' element={<Acce />}/>
-          <Route path='/엔터테인먼트' element={<Enter />}/>
-          <Route path='/고객지원' element={<Service />}/>
-          <Route path='/장바구니' element={<Cart />}/>
-           <Route path='/Login' element={<Login />}/>
+          <Route path='/Acce' element={<Acce />}/>
+          <Route path='/Enter' element={<Enter />}/>
+          <Route path='/Service' element={<Service />}/>
+          <Route path='/Cart' element={<Cart />}/>
+          <Route path='/Login' element={<Login />}/>
         </Routes>
       </div>
   );

@@ -1,6 +1,5 @@
 import React, { useRef } from 'react'
 import Header from './Header'
-import Footer from './Footer'
 import { Button, Form } from 'react-bootstrap'
 
 const Login = () => {
@@ -20,8 +19,21 @@ const Login = () => {
         if(!email.test(idv) && !phone.test(idv)){
             alert('이메일 또는 전화번호 형식이 아닙니다.');
             return false;
-        }else if(pw.length < 8 || pw.length > 20){
+        } else if(pw.length < 8 || pw.length > 20){
             alert('8자리 ~ 20자리 이내로 입력해주세요.');
+            return false;
+        } else if(pw.search(/\s/) != -1){
+            alert('비밀번호는 공백 없이 입력해주세요.');
+            return false;
+        } else if((num < 0 && eng < 0) || (eng < 0 && spe <0) || (spe < 0 && num < 0)){
+            alert('영문, 숫자, 특수문자 중 2가지 이상을 혼합하여 입력해주세요.');
+            return false;
+        } else if(/(\w)\1\1\1/.test(pw)){
+            alert('같은 문자를 4번 이상 사용할 수 없습니다.');
+            return true;
+        }else {
+            alert('로그인 되었습니다.');
+            return true;
         }
     }
 
@@ -40,11 +52,11 @@ const Login = () => {
 
                     <Form>
                         <Form.Group className="email-box" controlId="formBasicEmail">
-                            <Form.Control type="email" placeholder="이메일 또는 전화번호" />
+                            <Form.Control ref={id} type="text" placeholder="이메일 또는 전화번호" />
                         </Form.Group>
 
-                        <Form.Group className="passwrod-box" controlId="formBasicPassword">
-                            <Form.Control type="password" placeholder="암호" />
+                        <Form.Group className="password-box" controlId="formBasicPassword">
+                            <Form.Control ref={password} type="password" placeholder="암호" />
                         </Form.Group>
 
                         <label className="login-checkbox">
@@ -55,7 +67,7 @@ const Login = () => {
                         <h4>암호를 잊으셨습니까? <i className="fi fi-bs-arrow-up-right"></i></h4>
                         <p>Apple 계정이 없습니까? <span>Apple 계정 생성 <i className="fi fi-bs-arrow-up-right"></i></span></p>
 
-                        <Button variant="primary" type="submit">
+                        <Button variant="primary" type="submit" onClick={chkLogin}>
                             로그인
                         </Button>
                     </Form>
@@ -63,7 +75,7 @@ const Login = () => {
 
             </div>
 
-            <hr style={{ margin: 0 }} />
+            <hr style={{ margin: 0, marginTop:"5%"}} />
 
             <div className="login-footerWrap">
                 <div className="login-footerfont1">

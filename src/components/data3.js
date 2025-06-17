@@ -1,13 +1,13 @@
 let data3 = [
     {
         id: 8,
-        img: "/img/악세5.png",
+        img: process.env.PUBLIC_URL + "/img/악세5.png",
         mainTitle: "iPad(A16모델)용 Magic Keyboard Folio",
         title: "iPad(A16모델)용 Magic Keyboard Folio",
         price: 380000,
         amount: 1,
 
-        detailimgs: "/img/악세9-1.png",
+        detailimgs: process.env.PUBLIC_URL + "/img/악세9-1.png",
 
         outline1: "iPad(A16 모델)와 찰떡궁합인 Magic Keyboard Folio. 놀라운 타이핑 경험을 선사하는 것은 물론, 정밀하게 작업을 다룰 수 있는 내장형 트랙패드가 탑재되어 있고, 14개의 키로 이루어진 기능 키가 한 줄에 자리 잡고 있죠. 탈부착식 키보드와 보호형 후면 패널로 구성된 다재다능한 2단 분리형 디자인으로 선보이며, 두 부분 모두 iPad에 자석식으로 부착됩니다. 언제든 매끄럽게 원하는 각도로 조절 가능한 조절식 스탠드는 보다 편안한 iPad 시청 경험을 가능하게 해줍니다. 게다가 Magic Keyboard Folio는 어디에서든 iPad를 든든하게 보호해줍니다.",
 
@@ -28,13 +28,13 @@ let data3 = [
 
     {
         id: 9,
-        img: "/img/악세6.png",
+        img: process.env.PUBLIC_URL + "/img/악세6.png",
         mainTitle: "MagSeafe형 iPhone 16 투명 케이스",
         title: "MagSeafe형 iPhone 16 투명 케이스",
         price: 69000,
         amount: 1,
 
-        detailimgs: "/img/악세10-1.png",
+        detailimgs: process.env.PUBLIC_URL + "/img/악세10-1.png",
 
         outline1: "얇고 가벼운 데다 탁월한 그립감을 선사하는 Apple 제작 투명 케이스는 iPhone 16의 아름다운 색상을 그대로 보여 주면서도 폰을 철저히 보호해 줍니다.",
         outline2: "투명한 폴리카보네이트와 유연한 소재로 혼합 제작된 이 케이스는 버튼을 딱 맞게 감싸도록 디자인되어 있어 사용이 편리합니다. 또, 이 케이스는 ‘카메라 컨트롤'을 원활하게 사용할 수 있습니다. 사파이어 크리스털에 전도층 처리가 되어 있어 손가락의 작은 움직임까지 카메라 컨트롤에 정확히 전달됩니다.",
@@ -53,17 +53,22 @@ let data3 = [
 
     {
         id: 10,
-        img: "/img/악세7.png",
-        imgColor: "/img/악세7-color.png",
-        mainTitle: "49mm 밀레니즈 루프 (M) - 내추럴 티타늄",
+        img: process.env.PUBLIC_URL + "/img/악세7.png",
+        imgColor: process.env.PUBLIC_URL + "/img/악세7-color.png",
+        mainTitle: "49mm 밀레니즈 루프 (M)",
         title: "49mm 밀레니즈 루프 (M)",
         price: 285000,
         amount: 1,
 
-       colors: [{ src: "/img/악세11_COLOR1.jpg", name: "내추럴 티타늄" },
-        { src: "/img/악세11_COLOR2.jpg", name: "블랙 티타늄" },],
+       colors: [
+            { src: process.env.PUBLIC_URL + "/img/악세11_COLOR1.jpg", name: "내추럴 티타늄" },
+            { src: process.env.PUBLIC_URL + "/img/악세11_COLOR2.jpg", name: "블랙 티타늄" }
+        ],
 
-        detailimgs: ["/img/악세11-1.png", "/img/악세11-2.png"],
+        detailimgs: [
+            process.env.PUBLIC_URL +"/img/악세11-1.png", 
+            process.env.PUBLIC_URL +"/img/악세11-2.png"
+        ],
 
         outline1: "티타늄 밀레니즈 루프는 항공우주 등급 티타늄 메시 소재와 단단히 고정되는 파라슈트 스타일 버클이 특징입니다. 역사적으로 다이버들이 사용한 스테인리스 스틸 메시에서 영감을 받아 탄생했으며, 해양 활동을 염두에 두고 디자인되었죠. 가벼운 티타늄으로 제작되어 어떤 룩에도 제격입니다.",
         outline2: "이 밴드는 탄소 중립 제품입니다. 티타늄 밀레니즈 루프는 중량 기준 85%의 재활용 소재를 포함하고 있으며, 제품 생산에 사용되는 전력의 100%를 청정 에너지로 충당하고 있습니다. 또한, 모든 탄소 중립 Apple Watch 제품의 50% 이상이 비항공편 방식으로 운송됩니다.",
@@ -79,21 +84,26 @@ let data3 = [
 
     {
         id: 11,
-        img: "/img/악세8.png",
-        imgColor: "/img/악세8-color.png",
+        img: process.env.PUBLIC_URL + "/img/악세8.png",
+        imgColor: process.env.PUBLIC_URL + "/img/악세8-color.png",
         smallTitle: "New",
-        mainTitle: "Beats USB-C-USV-C 우븐 케이블 \n (1.5m) - 래피드 레드",
+        mainTitle: "Beats USB-C-USV-C 우븐 케이블 \n (1.5m)",
         title: "Beats USB-C-USV-C 우븐 케이블 \n (1.5m)",
         price: 69000,
         amount: 1,
 
-        colors: [{ src: "/img/악세12_COLOR1.jpg", name: "레피드 레드" },
-        { src: "/img/악세12_COLOR2.jpg", name: "볼트 블랙" },
-        { src: "/img/악세12_COLOR3.jpg", name: "러시 스톤" },
-        { src: "/img/악세12_COLOR4.jpg", name: "니트로 네이비" },
+        colors: [
+            { src: process.env.PUBLIC_URL + "/img/악세12_COLOR1.jpg", name: "레피드 레드" },
+            { src: process.env.PUBLIC_URL + "/img/악세12_COLOR2.jpg", name: "볼트 블랙" },
+            { src: process.env.PUBLIC_URL + "/img/악세12_COLOR3.jpg", name: "러시 스톤" },
+            { src: process.env.PUBLIC_URL + "/img/악세12_COLOR4.jpg", name: "니트로 네이비" },
         ],
 
-        detailimgs: ["/img/악세12-1.png", "/img/악세12-2.png", "/img/악세12-3.png", "/img/악세12-4.png"],
+        detailimgs: [
+            process.env.PUBLIC_URL +"/img/악세12-1.png", 
+            process.env.PUBLIC_URL +"/img/악세12-2.png", 
+            process.env.PUBLIC_URL +"/img/악세12-3.png", 
+            process.env.PUBLIC_URL +"/img/악세12-4.png"],
 
         outline1: "엉킴, 꼬임, 해짐을 줄인 Beats의 새 브레이드 케이블로 충전 경험을 새로운 차원으로 업그레이드하세요.",
         outline2: "Beats 1.5m USB-C-USB-C 충전 케이블은 엉킴이 없는 우븐 디자인으로 제작되어 보다 뛰어난 내구성과 편리함을 제공합니다.",

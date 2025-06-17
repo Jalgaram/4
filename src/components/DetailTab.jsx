@@ -134,7 +134,7 @@ const DetailTab = ({ product }) => {
                     <h5>MagSafe 쇼핑하기 <i className="fi fi-rr-angle-small-right"></i></h5>
                 </div>
 
-                <img src="/img/detail1.png" alt="광고여" />
+                <img src= {process.env.PUBLIC_URL +"/img/detail1.png"} alt="광고여" />
             </div>
         </div>
     )

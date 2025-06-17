@@ -12,7 +12,7 @@ const Sale = () => {
             <p>1년 보증, 철저한 테스트를 거쳐 완벽하게 작동하는 기능, <br /> 최대 15% 더 부담 없는 가격으로 새롭게 태어난 Apple 인증 리퍼비쉬 제품을 만나보세요.</p>
           </div>
 
-          <img src="/img/할인1.png" alt="리퍼비쉬" />
+          <img src={process.env.PUBLIC_URL +"/img/할인1.png"} alt="리퍼비쉬" />
         </Col>
 
         <Col md={1} className="sale2">
@@ -24,7 +24,7 @@ const Sale = () => {
             <h6>전문가와 상담하기 &gt;</h6>
           </div>
 
-          <img src="/img/할인2.png" alt="비지니스" />
+          <img src={process.env.PUBLIC_URL +"/img/할인2.png"} alt="비지니스" />
         </Col>
       </Row>
     </Container >

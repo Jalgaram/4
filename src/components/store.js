@@ -13,14 +13,14 @@ let cart = createSlice(
         initialState: [
             {
                 id: 1,
-                img: '/img/악세2.png',
+                img: process.env.PUBLIC_URL + '/img/악세2.png',
                 mainTitle: 'Tech21 FlexQuartz \n (iPhone 16 Pro Max) (MagSafe 호환) - 스누피 체리 블라썸',
                 amount: 1,
                 price: 79000
             },
             {
                 id: 2,
-                img: '/img/악세3.png',
+                img: process.env.PUBLIC_URL + '/img/악세3.png',
                 mainTitle: 'Tech21 EvoArt Snoopy Case for AirPods Pro 2 - 체리 블라썸',
                 amount: 1,
                 price: 47000

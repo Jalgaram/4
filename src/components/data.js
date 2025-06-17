@@ -1,28 +1,42 @@
 let data = [
     {
         id: 0,
-        img: "/img/악세1.png",
-        imgColor: "/img/악세1-color.png",
+        img: process.env.PUBLIC_URL + "/img/악세1.png",
+        imgColor: process.env.PUBLIC_URL + "/img/악세1-color.png",
         smallTitle: "New",
         mainTitle: "MagSage형 iPhone 16 Pro Max \n 실리콘 케이스",
         title: "MagSage형 iPhone 16 Pro Max \n 실리콘 케이스",
         price: 69000,
         amount: 1,
 
-        colors: [{ src: "/img/악세1_COLOR2.jpg", name: "피오니" },
-        { src: "/img/악세1_COLOR1.jpg", name: "페리윙클" },
-        { src: "/img/악세1_COLOR3.jpg", name: "아쿠아마린" },
-        { src: "/img/악세1_COLOR4.jpg", name: "텐저린" },
-        { src: "/img/악세1_COLOR5.jpg", name: "스타 프루프" },
-        { src: "/img/악세1_COLOR6.jpg", name: "울트라마린" },
-        { src: "/img/악세1_COLOR7.jpg", name: "레이크 그린" },
-        { src: "/img/악세1_COLOR8.jpg", name: "후크시아" },
-        { src: "/img/악세1_COLOR9.jpg", name: "플럼" },
-        { src: "/img/악세1_COLOR10.jpg", name: "블랙" },
-        { src: "/img/악세1_COLOR11.jpg", name: "스톤 그레이" },
-        { src: "/img/악세1_COLOR12.jpg", name: "데님" }],
+        colors: [
+            { src: process.env.PUBLIC_URL + "/img/악세1_COLOR2.jpg", name: "피오니" },
+            { src: process.env.PUBLIC_URL + "/img/악세1_COLOR1.jpg", name: "페리윙클" },
+            { src: process.env.PUBLIC_URL + "/img/악세1_COLOR3.jpg", name: "아쿠아마린" },
+            { src: process.env.PUBLIC_URL + "/img/악세1_COLOR4.jpg", name: "텐저린" },
+            { src: process.env.PUBLIC_URL + "/img/악세1_COLOR5.jpg", name: "스타 프루프" },
+            { src: process.env.PUBLIC_URL + "/img/악세1_COLOR6.jpg", name: "울트라마린" },
+            { src: process.env.PUBLIC_URL + "/img/악세1_COLOR7.jpg", name: "레이크 그린" },
+            { src: process.env.PUBLIC_URL + "/img/악세1_COLOR8.jpg", name: "후크시아" },
+            { src: process.env.PUBLIC_URL + "/img/악세1_COLOR9.jpg", name: "플럼" },
+            { src: process.env.PUBLIC_URL + "/img/악세1_COLOR10.jpg", name: "블랙" },
+            { src: process.env.PUBLIC_URL + "/img/악세1_COLOR11.jpg", name: "스톤 그레이" },
+            { src: process.env.PUBLIC_URL + "/img/악세1_COLOR12.jpg", name: "데님" }
+        ],
 
-        detailimgs: ["/img/악세1-1.png", "/img/악세1-2.png", "/img/악세1-3.png", "/img/악세1-4.png", "/img/악세1-5.png", "/img/악세1-6.png", "/img/악세1-7.png", "/img/악세1-8.png", "/img/악세1-9.png", "/img/악세1-10.png", "/img/악세1-11.png", "/img/악세1-12.png"
+        detailimgs: [
+            process.env.PUBLIC_URL +"/img/악세1-1.png", 
+            process.env.PUBLIC_URL + "/img/악세1-2.png", 
+            process.env.PUBLIC_URL + "/img/악세1-3.png",
+            process.env.PUBLIC_URL + "/img/악세1-4.png",
+            process.env.PUBLIC_URL + "/img/악세1-5.png",
+            process.env.PUBLIC_URL + "/img/악세1-6.png",
+            process.env.PUBLIC_URL + "/img/악세1-7.png",
+            process.env.PUBLIC_URL + "/img/악세1-8.png",
+            process.env.PUBLIC_URL + "/img/악세1-9.png",
+            process.env.PUBLIC_URL + "/img/악세1-10.png",
+            process.env.PUBLIC_URL + "/img/악세1-11.png",
+            process.env.PUBLIC_URL + "/img/악세1-12.png"
         ],
 
         outline1: "Apple이 디자인한 MagSafe형 실리콘 케이스는 iPhone 16 Pro Max에 한층 멋을 더하는 동시에 폰을 듬직하게 보호해 줍니다.",
@@ -42,7 +56,7 @@ let data = [
 
     {
         id: 1,
-        img: "/img/악세2.png",
+        img: process.env.PUBLIC_URL + "/img/악세2.png",
         imgColor: "",
         smallTitle: "Apple 독점",
         mainTitle: "Tech21 FlexQuartz \n (iPhone 16 Pro Max) (MagSafe 호환) - 스누피 체리 블라썸",
@@ -50,7 +64,7 @@ let data = [
         price: 79000,
         amount: 1,
 
-        detailimgs: "/img/악세2-1.png",
+        detailimgs: process.env.PUBLIC_URL + "/img/악세2-1.png",
 
         outline1: "당사의 가장 앞선 iPhone용 투명 케이스인 MagSafe 호환 Tech21FlexQuartz로 스누피의 발랄한 매력을 느껴보세요.최신 기기를 든든하게 보호하면서 기기가 지닌 멋도 고스란히 살리고 싶다면 FlexQuartz가 정답이죠.엄격한 테스트를 거쳐 군장비 표준을 15배 초과 충족하는 이 제품은 혁신적인 4.9m FlexShock™ 반복 낙하 보호 기술로 제작되어 폰이 어딘가에 세게 부딪히더라도 보호해 줄 수 있습니다.",
         outline2: "스마트 UV 차단 소재가 FlexQuartz 케이스의 변색과 소재 분해를 방지합니다. 덕분에 스누피 디자인과 케이스의 투명함이 처음처럼 그대로 유지되죠. 완벽한 MagSafe 호환성과 산뜻하고 다양한 옵션을 자랑하는 이 케이스는 미학과 기능성의 완벽한 조화를 보여줍니다.",
@@ -76,7 +90,7 @@ let data = [
 
     {
         id: 2,
-        img: "/img/악세3.png",
+        img: process.env.PUBLIC_URL + "/img/악세3.png",
         imgColor: "",
         smallTitle: "Apple 독점",
         mainTitle: "Tech21 EvoArt Snoopy Case for AirPods Pro 2 - 체리 블라썸",
@@ -84,7 +98,7 @@ let data = [
         price: 47000,
         amount: 1,
 
-        detailimgs: "/img/악세3-1.png",
+        detailimgs: process.env.PUBLIC_URL + "/img/악세3-1.png",
 
         outline1: "Apple AirPods Pro 2를 위한 Tech21 Peanuts EvoArt 커버로 매력적인 스누피와 궁극의 보호 성능을 만끽하세요. 이 스페셜 에디션에는 독점 피너츠 아트가 그려져 있어 일상적인 필수품에 재미와 개성을 더하는 동시에 강력한 충격 보호 성능을 제공합니다.",
         outline2: "스타일과 기능성을 위해 정교하게 디자인된 이 커버는 자외선과 긁힘에 강합니다. 덕분에 시간이 지나도 매력적인 스누피 디자인이 새것처럼 유지되죠. 딱 맞는 핏과 정교하게 절개된 버튼, 충전 포트 및 랜야드 부착 구멍까지 갖춘 EvoArt가 당신의 라이프스타일에 매끄러운 기능성과 편리성을 더해 줍니다.",
@@ -104,7 +118,7 @@ let data = [
 
     {
         id: 3,
-        img: "/img/악세4.png",
+        img: process.env.PUBLIC_URL + "/img/악세4.png",
         imgColor: "",
         smallTitle: "Apple 독점",
         mainTitle: "Tech21 EvoArt Snoopy Case (AirPods Max) - 체리 블라썸",
@@ -112,7 +126,7 @@ let data = [
         price: 59000,
         amount: 1,
 
-        detailimgs: "/img/악세4-1.png",
+        detailimgs: process.env.PUBLIC_URL + "/img/악세4-1.png",
 
         outline1: "Tech21 및 Peanuts의 독점 협업 제품으로 당신의 Apple AirPods Max에 재미있는 매력과 강력한 보호 성능을 더해 보세요! 재치 넘치는 스누피 디자인이 포함된 이 EvoArt 커버는 유행을 타지 않는 매력과 혁신적인 첨단 기능성을 갖춰 피너츠 일당에 대한 애정을 표현하는 동시에 헤드폰을 안전하게 보호할 수 있습니다.",
         outline2: "완벽한 기능을 자랑하는 이 커버는 자외선과 긁힘에 강합니다. 덕분에 다채로운 아트가 스누피의 모험처럼 생동감 넘치게 유지되죠. 정교하게 절개된 버튼과 크라운 구멍은 기능성을 온전히 활용하는 동시에 당신만의 스타일을 뽐낼 수 있게 해줍니다.",
