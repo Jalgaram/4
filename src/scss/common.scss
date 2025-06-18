@@ -30,7 +30,7 @@
 
 .App {
     @include full-width;
-    height: 10.88vh; //100px
+    height: 100px; //100px
     @include margin-auto;
     background-color: #fff;
 
@@ -62,21 +62,21 @@
             }
 
             .fi-brands-apple {
-                font-size: 1.25vw; //24px
+                font-size: 24px; //24px
             }
 
             .fi-rr-search,
             .fi-rs-user,
             .fi-rc-shopping-bag {
-                font-size: 1.04vw; //20px
+                font-size: 20px; //20px
             }
 
             .me-auto {
                 margin: 0 auto;
 
                 a {
-                    margin: 0 1.04vw; //20px
-                    font-size: 0.85vw; //16px
+                    margin: 0 20px; //20px
+                    font-size: 16px; //16px
                 }
             }
         }
@@ -86,31 +86,31 @@
     // 푸터
     .footer {
         @include full-width;
-        height: 136vh; //1250px
+        height: 1250px; //1250px
         @include margin-auto;
-        margin-top: 2.17vh; //20px
+        margin-top: 20px; //20px
         background-color: #f5f5f7;
 
         .footerWrap {
             @include contents-width;
             height: 100%;
             @include margin-auto;
-            padding: 0.54vh 0; //5px 0
+            padding: 5px 0; //5px 0
             display: flex;
             flex-direction: column;
             justify-content: space-around;
 
             .footerTab {
                 @include contents-width;
-                height: 4.35vh; //40px
-                margin: 2.17vh auto; //20px
+                height: 40px; //40px
+                margin: 20px auto; //20px
                 display: flex;
                 justify-content: center;
                 align-items: center;
 
                 h3 {
                     font: {
-                        size: 1.2vw; //23px
+                        size: 23px; //23px
                         weight: 600;
                     }
                     margin: 0;
@@ -119,19 +119,20 @@
 
                 ul {
                     margin: 0;
+                    padding: 0;
                     display: flex;
 
                     li {
-                        width: 6.51vw; //125px
-                        margin: 0 2.6vw; //50px
-                        padding: 0.87vh 0; //8px 0
+                        width: 125px; //125px
+                        margin: 0 1.5vw; //22px
+                        padding: 8px 0; //8px 0
                         display: flex;
                         justify-content: center;
                         align-items: center;
                         list-style: none;
 
                         font: {
-                            size: 0.885vw; //17px
+                            size: 17px; //17px
                             weight: 400;
                         }
 
@@ -149,8 +150,8 @@
                         }
 
                         .fi-bs-arrow-up-right {
-                            font-size: 0.52vw; //10px
-                            margin-left: 0.52vw; //10px
+                            font-size: 10px; //10px
+                            margin-left: 10px; //10px
                         }
                     }
                 }
@@ -161,7 +162,7 @@
 
                 p {
                     font: {
-                        size: 0.625vw; //12px
+                        size: 12px; //12px
                         weight: 600;
                     }
 
@@ -172,7 +173,7 @@
 
             h4 {
                 font: {
-                    size: 0.78vw; //15px
+                    size: 15px; //15px
                     weight: 700;
                 }
 
@@ -195,7 +196,7 @@
                         margin: 0;
 
                         font: {
-                            size: 0.72vw; //14px
+                            size: 14px; //14px
                             weight: 700;
                         }
 
@@ -206,15 +207,15 @@
                     ul {
                         padding: 0;
                         margin: 0;
-                        margin-bottom: 1.63vh; //15px
+                        margin-bottom: 15px; //15px
 
                         li {
                             list-style: none;
                             text-align: left;
-                            margin: 1.088vh 0; //10px 0
+                            margin: 10px 0; //10px 0
 
                             font: {
-                                size: 0.72vw; //14px
+                                size: 14px; //14px
                                 weight: 400;
                             }
 
@@ -233,7 +234,7 @@
                 margin: 0;
 
                 font: {
-                    size: 0.67vw; //13px
+                    size: 13px; //13px
                     weight: 500;
                 }
 
@@ -248,7 +249,7 @@
 
             .footerfont3 {
                 @include contents-width;
-                padding-bottom: 0.54vh; //5px
+                padding-bottom: 5px; //5px
                 display: flex;
                 justify-content: space-between;
 
@@ -257,21 +258,21 @@
 
                     ul {
                         display: flex;
-                        margin: 0 0.52vw; //10px
+                        margin: 0 10px; //10px
                         padding: 0;
 
                         li {
                             list-style: none;
-                            margin: 0 0.26vw; //5px
+                            margin: 0 5px; //5px
 
                             font: {
-                                size: 0.677vw; //13px
+                                size: 13px; //13px
                                 weight: 500;
                             }
 
                             &:not(:first-child)::before {
                                 content: '|';
-                                margin-right: 0.52vw; //10px
+                                margin-right: 10px; //10px
                             }
 
                             &:hover {

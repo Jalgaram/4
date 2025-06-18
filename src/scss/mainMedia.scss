@@ -1,39 +1,57 @@
 @charset "utf-8";
 
-@media (max-width: 1199px) {
+@media (max-width: 767px) {}
+
+@media (min-width: 768px) and (max-width: 1199px) {}
+
+@media (min-width: 1200px) and (max-width: 1399px) {}
+
+
+@media (min-width: 1400px) and (max-width: 1439px) {
+
     // 슬라이드
     .mySwiper {
-
         .swiper-slide {
-
             div {
-                width: 41.05vw; //500px
+                max-width: 34.74vw !important; //500px
+                margin-top: 35px; //35px
 
                 h2 {
+                    margin-bottom: 0;
+                    margin-top: 2%;
+
                     font: {
-                        size: 3.5vw; //50px
+                        size: 3.41vw; //50px
+                        weight: 800;
                     }
                 }
 
                 h4 {
+                    margin: 0;
+
                     font: {
-                        size: 1.4vw !important; //16px
+                        size: 1.1vw; //16px
+                        weight: 700;
                     }
                 }
 
                 p {
+                    margin: 25px 0; //25px 0
+
                     font: {
-                        size: 1.5vw !important; //20px
+                        size: 1.38vw; //20px
+                        weight: 500;
                     }
                 }
 
                 button {
-                    width: 9vw; //110px
-                    padding: 7px 1.23vw; //7px 15px
-                    margin: 0 0.82vw; //0 10px
+                    width: 7.64vw; //110px
+                    padding: 7px 1vw; //7px 15px
+                    margin: 0 0.83vw; //0 10px
 
                     font: {
-                        size: 1.1vw !important; //16px
+                        size: 1vw; //16px
+                        weight: 500;
                     }
                 }
             }
@@ -43,14 +61,22 @@
 
             div {
 
+                p {
+                    margin: 20px 0; //20px 0
+                }
+
                 button {
-                    margin: 15px 0.82vw; //15px 10px
+                    margin: 15px 0.69vw; //15px 10px
                 }
 
                 .slide2font {
-                    left: 25%;
+                    position: absolute;
+                    bottom: 10%;
+                    left: 20%;
+
                     font: {
-                        size: 1vw !important; //14px
+                        size: 0.97vw; //14px
+                        weight: 600;
                     }
                 }
             }
@@ -58,15 +84,18 @@
 
         .slideImg3 {
             div {
+                p {
+                    margin: 17px 0; //17px 0
+                }
+
                 button {
-                    margin: 0 0.82vw; //0 10px
+                    margin: 0 0.83vw; //0 10px
                 }
 
                 .slide2font {
-                    color: #6E6E73;
 
                     font: {
-                        size: 0.985vw !important; //12px
+                        size: 1vw; //12px
                         weight: 600;
                     }
                 }
@@ -74,145 +103,17 @@
         }
     }
 
-    // 이너메뉴
-    .innerMenu {
-        margin-bottom: 15%;
-
-        .innerWrap {
-            ul {
-                flex-flow: row wrap;
-
-                li {
-                    margin: 5px 0;
-                }
-            }
-        }
-    }
-
-     // 중앙 슬라이드
-    .centerWrap {
-
-        .center1 {
-            .centerfontBox1 {
-
-                p {
-                    font: {
-                         size: 1.04vw !important; //20px
-                    }
-                }
-            }
-        }
-
-        .center2 {
-            .centerfontBox2 {
-                p {
-                    font: {
-                        size: 0.78vw !important; //15px
-                    }
-                }
-            }
-        }
-
-        .center5 {
-            .centerfontBox5 {
-                p {
-                    font: {
-                        size: 0.78vw !important; //15px
-                    }
-                }
-            }
-        }
-    }
-}
-
-
-
-@media (min-width: 1201px) and (max-width: 1218px) {
-
-    // 슬라이드
-    .mySwiper {
-
-        .swiper-slide {
-
-            div {
-                width: 41.05vw; //500px
-
-                h2 {
-                    font: {
-                        size: 3.5vw; //50px
-                    }
-                }
-
-                h4 {
-                    font: {
-                        size: 1.4vw !important; //16px
-                    }
-                }
-
-                p {
-                    font: {
-                        size: 1.5vw !important; //20px
-                    }
-                }
-
-                button {
-                    width: 9vw; //110px
-                    padding: 7px 1.23vw; //7px 15px
-                    margin: 0 0.82vw; //0 10px
-
-                    font: {
-                        size: 1.1vw !important; //16px
-                    }
-                }
-            }
-        }
-
-        .slideImg2 {
-
-            div {
-
-                button {
-                    margin: 15px 0.82vw; //15px 10px
-                }
-
-                .slide2font {
-                    left: 25%;
-                    font: {
-                        size: 1vw !important; //14px
-                    }
-                }
-            }
-        }
-
-        .slideImg3 {
-            div {
-                button {
-                    margin: 0 0.82vw; //0 10px
-                }
-
-                .slide2font {
-                    color: #6E6E73;
-
-                    font: {
-                        size: 0.985vw !important; //12px
-                        weight: 600;
-                    }
-                }
-            }
-        }
-    }
 
     // 이너메뉴
     .innerMenu {
-        margin-bottom: 13%;
+        padding: 3.5% 0;
 
         .innerWrap {
+            width: auto;
+            padding: 0 5%;
+
             ul {
-                flex-flow: row wrap;
-
                 li {
-                    margin: 5px 0;
-
                     img {
                         width: auto;
                         height: 9.9vh; //91px
@@ -220,13 +121,8 @@
 
                     p {
                         margin-top: 1.63vh; //15px
-
-                        font: {
-                            size: 1.31vw; //16px
-                            weight: 400;
-                        }
-
-                        color: #1D1D1F;
+                        font-size: 1.2vw;
+                        font-weight: 400;
                     }
                 }
             }
@@ -235,64 +131,149 @@
 
     //신제품 
     .newWrap {
+        width: 100%;
+        margin: 0 auto;
+
+        h3 {
+            font: {
+                size: 2.5vw; //30px
+                weight: 700;
+            }
+        }
+
+        p {
+            font: {
+                size: 2vw; //25px
+                weight: 700;
+            }
+        }
+
         .newBoxWrap {
+            width: 100%;
+            height: 54.95vh;
+            justify-content: space-around;
+
+            .col {
+                flex: none;
+            }
+
             .newBox1 {
+
                 .new1 {
-                    width: 22vw; //404px
+                    width: 30vw !important; //404px
+                    padding-left: 1.38vw; //20px
+                    padding-top: 3.26vh; //30px
+
+                    h3 {
+                        margin-bottom: 1.08vh; //10px
+
+                        font: {
+                            size: 2.5vw; //35px
+                            weight: 700;
+                        }
+                    }
+
+                    h5 {
+
+                        font: {
+                            size: 1.5vw; //22px
+                            weight: 500;
+                        }
+                    }
+
+                    p {
+                        font: {
+                            size: 1.2vw; //18px
+                            weight: 500;
+                        }
+                    }
                 }
             }
 
             .newBox2 {
+                height: 100%;
+
+                .new {
+                    width: 50vw !important; //826px
+                    height: 25.35vh; //233px
+                }
+
                 .new2 {
                     .newfontBox {
-                        margin: 5vh 0;
+                        width: auto;
+                        text-align: left;
+                        margin: 2.82vh 0; //26px 0
+
+                        h3 {
+                            margin-bottom: 1.08vh; //10px
+
+                            font: {
+                                size: 2.5vw; //35px
+                                weight: 700;
+                            }
+                        }
+
+                        h4 {
+                            font: {
+                                size: 1.5vw; //22px
+                                weight: 600;
+                            }
+                        }
+
+                        h5 {
+                            font: {
+                                size: 1.5vw; //22px
+                                weight: 500;
+                            }
+                        }
+
+                        p {
+                            font: {
+                                size: 1.2vw; //18px
+                                weight: 500;
+                            }
+                        }
+                    }
+
+                    img {
+                        width: 10.42vw; //150px
+                        height: auto; //211px
                     }
                 }
 
                 .new3 {
+                    .newfontBox2 {
+                        h3 {
+                            margin-top: 2.17vh; //20px
+                            margin-bottom: 1.088vh; //10px
+
+                            font: {
+                                size: 2.5vw; //35px
+                                weight: 700;
+                            }
+                        }
+
+                        h4 {
+                            font: {
+                                size: 1.5vw; //22px
+                                weight: 600;
+                            }
+                        }
+
+                        p {
+                            font: {
+                                size: 1.2vw; //18px
+                                weight: 500;
+                            }
+                        }
+                    }
+
                     img {
-                        width: 18vw; //283px
+                        width: 19.66vw; //283px
                         height: auto;
                     }
                 }
             }
         }
     }
-
-
-    // 중앙 슬라이드
-    .centerWrap {
-
-        .center1 {
-            .centerfontBox1 {
-
-                p {
-                    font: {
-                         size: 1.04vw !important; //20px
-                    }
-                }
-            }
-        }
-
-        .center2 {
-            .centerfontBox2 {
-                p {
-                    font: {
-                        size: 0.78vw !important; //15px
-                    }
-                }
-            }
-        }
-
-        .center5 {
-            .centerfontBox5 {
-                p {
-                    font: {
-                        size: 0.78vw !important; //15px
-                    }
-                }
-            }
-        }
-    }
-
 }
