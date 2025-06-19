@@ -578,7 +578,7 @@
         margin: 10px 0; //10px
 
         font: {
-          size: 15px; //15px
+          size: 0.9vw; //15px
           weight: 500;
         }
 
@@ -733,8 +733,6 @@
         size: 30px; //30px
         weight: 700;
       }
-
-      margin: 0;
       color: #1D1D1F;
       cursor: default;
     }
@@ -777,7 +775,7 @@
     }
 
     .contentBox {
-      width: 278px; //278px
+      width: 14.479vw; //278px
       height: 400px; //400px
       display: flex;
       flex-direction: column;
@@ -895,6 +893,7 @@
       width: 915px; //915px
       height: 260px; //260px
       padding: 0 20px; //0 20px
+      margin: 10px 0;
       background-color: #F5F5F7;
       border-radius: 15px;
       @include shadow;
@@ -944,6 +943,7 @@
       width: 915px; //915px
       height: 260px; //260px
       padding: 0 20px; //0 20px
+      margin: 10px 0;
       background-color: #1D1D1F;
       border-radius: 15px;
       @include shadow;
@@ -1191,7 +1191,7 @@
       }
 
       span {
-        margin: 0 5px;
+        margin: 0;
 
         font: {
           size: 16px;
@@ -1233,7 +1233,7 @@
   text-align: center;
 
   .cartBtn2 {
-    font-size: 0.83vw;
+    font-size: 16px;
     width: 400px;
     padding: 10px 0;
   }

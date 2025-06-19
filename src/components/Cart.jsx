@@ -69,7 +69,7 @@ const Cart = () => {
                                     </p>
                                 </td>
                                 
-                                <td style={{cursor:"default"}}>₩{(v.price * v.amount).toLocaleString()}</td>
+                                <td className='price' style={{cursor:"default"}}>₩{(v.price * v.amount).toLocaleString()}</td>
                             </tr>
                         )
                     }
