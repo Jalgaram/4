@@ -31,7 +31,7 @@
                 }
 
                 p {
-                    margin: 25px 0; //25px 0
+                    margin: 15px 0; //25px 0
 
                     font: {
                         size: 1.5vw; //20px
@@ -61,7 +61,7 @@
                 }
 
                 button {
-                    margin: 15px 0.69vw; //15px 10px
+                    margin: 5px 0.69vw; //15px 10px
                 }
 
                 .slide2font {
@@ -80,7 +80,7 @@
         .slideImg3 {
             div {
                 p {
-                    margin: 15px 0; //17px 0
+                    margin: 10px 0; //17px 0
                 }
 
                 button {
@@ -132,6 +132,19 @@
     .newWrap {
         width: 100%;
         margin: 0 auto;
+        margin-bottom: 20px;
+
+        h3{
+            font: {
+                size: 3vw;
+            }
+        }
+
+        p{
+            font: {
+                size: 2vw;
+            }
+        }
 
         .newBoxWrap {
             width: 100%;
@@ -145,7 +158,7 @@
             .newBox1 {
 
                 .new1 {
-                    width: 25vw !important; //404px
+                    width: 33vw !important; //404px
                     padding-left: 1.38vw; //20px
                     padding-top: 3.26vh; //30px
 
@@ -153,7 +166,7 @@
                         margin-bottom: 1.08vh; //10px
 
                         font: {
-                            size: 2.5vw; //35px
+                            size: 3vw; //35px
                             weight: 700;
                         }
                     }
@@ -161,14 +174,14 @@
                     h5 {
 
                         font: {
-                            size: 1.5vw; //22px
+                            size: 1.8vw; //22px
                             weight: 500;
                         }
                     }
 
                     p {
                         font: {
-                            size: 1.2vw; //18px
+                            size: 1.7vw; //18px
                             weight: 500;
                         }
                     }
@@ -178,7 +191,7 @@
             .newBox2 {
 
                 .new {
-                    width: 45vw !important; //826px
+                    width: 50vw !important; //826px
                     height: 20vh; //233px
 
                     img{
@@ -198,28 +211,28 @@
                             margin-bottom: 1.08vh; //10px
 
                             font: {
-                                size: 3vw; //35px
+                                size: 3.5vw; //35px
                                 weight: 700;
                             }
                         }
 
                         h4 {
                             font: {
-                                size: 1.5vw; //22px
+                                size: 2vw; //22px
                                 weight: 600;
                             }
                         }
 
                         h5 {
                             font: {
-                                size: 1.5vw; //22px
+                                size: 1.8vw; //22px
                                 weight: 500;
                             }
                         }
 
                         p {
                             font: {
-                                size: 1.2vw; //18px
+                                size: 1.7vw; //18px
                                 weight: 500;
                             }
                         }
@@ -228,29 +241,29 @@
 
                 .new3 {
                     .newfontBox2 {
-                        margin: 11% 0;
-                        margin-right: 12%;
+                        margin: 12% 0;
+                        margin-right: 22%;
 
                         h3 {
                             margin-top: 0vh; //20px
                             margin-bottom: 1.088vh; //10px
 
                             font: {
-                                size: 3vw; //35px
+                                size: 3.5vw; //35px
                                 weight: 700;
                             }
                         }
 
                         h4 {
                             font: {
-                                size: 1.5vw; //22px
+                                size: 1.8vw; //22px
                                 weight: 600;
                             }
                         }
 
                         p {
                             font: {
-                                size: 1.2vw; //18px
+                                size: 1.7vw; //18px
                                 weight: 500;
                             }
                         }
@@ -270,7 +283,7 @@
 
         h3 {
             font: {
-                size: 2.5vw !important; //30px
+                size: 3vw !important; //30px
                 weight: 700;
             }
         }
@@ -301,7 +314,7 @@
 
                 h4 {
                     font: {
-                        size: 2vw !important; //30px
+                        size: 3vw !important; //30px
                         weight: 700;
                     }
                 }
@@ -310,7 +323,7 @@
                     margin: 10px 0; //10px
 
                     font: {
-                        size: 1.38vw !important; //20px
+                        size: 2vw !important; //20px
                         weight: 600;
                     }
                 }
@@ -324,14 +337,14 @@
 
                 h5 {
                     font: {
-                        size: 0.83vw !important; //12px
+                        size: 1.5vw !important; //12px
                         weight: 700;
                     }
                 }
 
                 h4 {
                     font: {
-                        size: 1.52vw !important; //22px
+                        size: 2.4vw !important; //22px
                         weight: 700;
                     }
                 }
@@ -340,7 +353,7 @@
                     margin: 10px 0; //10px
 
                     font: {
-                        size: 1.2vw !important; //15px
+                        size: 1.7vw !important; //15px
                         weight: 500;
                     }
                 }
@@ -351,14 +364,14 @@
             .centerfontBox3 {
                 h5 {
                     font: {
-                        size: 0.83vw; //12px
+                        size: 1.5vw; //12px
                         weight: 700;
                     }
                 }
 
                 h4 {
                     font: {
-                        size: 1.52vw; //22px
+                        size: 2.4vw; //22px
                         weight: 700;
                     }
                 }
@@ -371,7 +384,7 @@
 
                 h4 {
                     font: {
-                        size: 1.52vw; //22px
+                        size: 2.4vw; //22px
                         weight: 700;
                     }
                 }
@@ -384,7 +397,7 @@
 
                 h4 {
                     font: {
-                        size: 1.52vw; //22px
+                        size: 2.4vw; //22px
                         weight: 700;
                     }
                 }
@@ -393,7 +406,7 @@
                     margin: 10px 0; //10px 0
 
                     font: {
-                        size: 1.2vw !important; //15px
+                        size: 1.7vw !important; //15px
                         weight: 500;
                     }
                 }
@@ -406,7 +419,7 @@
 
                 h4 {
                     font: {
-                        size: 1.52vw; //22px
+                        size: 2.4vw; //22px
                         weight: 700;
                     }
 
@@ -419,14 +432,14 @@
             .centerfontBox7 {
                 h5 {
                     font: {
-                        size: 0.83vw; //12px
+                        size: 1.5vw; //12px
                         weight: 700;
                     }
                 }
 
                 h4 {
                     font: {
-                        size: 1.52vw; //22px
+                        size: 2.4vw; //22px
                         weight: 700;
                     }
                 }
@@ -442,7 +455,7 @@
 
             h3 {
                 font: {
-                    size: 2.5vw !important; //30px
+                    size: 3vw !important; //30px
                     weight: 700;
                 }
             }
@@ -485,21 +498,21 @@
 
                     h6 {
                         font: {
-                            size: 1.4vw; //11px
+                            size: 1.6vw; //11px
                             weight: 600;
                         }
                     }
 
                     h4 {
                         font: {
-                            size: 1.5vw; //14px
+                            size: 1.6vw; //14px
                             weight: 600;
                         }
                     }
 
                     p {
                         font: {
-                            size: 1.4vw; //13px
+                            size: 1.5vw; //13px
                             weight: 400;
                         }
                     }
