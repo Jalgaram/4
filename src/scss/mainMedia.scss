@@ -4,12 +4,12 @@
 
     // 슬라이드
     .mySwiper {
-        height: 440px; //592px
+        height: 400px; //592px
 
         .swiper-slide {
             div {
                 max-width: 41.7vw !important; //500px
-                margin-top: 35px; //35px
+                margin-top: 20px; //35px
 
                 h2 {
                     margin-bottom: 0;
@@ -111,7 +111,7 @@
                 flex-flow: row wrap;
 
                 li {
-                    margin: 0 2.5vw;
+                    margin: 0 2vw;
 
                     img {
                         width: auto;
