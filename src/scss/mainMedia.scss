@@ -1,12 +1,1451 @@
 @charset "utf-8";
 
-@media (max-width: 767px) {}
-
-@media (min-width: 768px) and (max-width: 1199px) {
+@media (min-width: 768px) and (max-width: 816px) {
 
     // 슬라이드
     .mySwiper {
-        height: 400px; //592px
+        height: 440px; //592px
+
+        .swiper-slide {
+            div {
+                max-width: 41.7vw !important; //500px
+                margin-top: 35px; //35px
+
+                h2 {
+                    margin-bottom: 0;
+                    margin-top: 1%;
+
+                    font: {
+                        size: 4vw; //50px
+                        weight: 800;
+                    }
+                }
+
+                h4 {
+                    margin: 0;
+
+                    font: {
+                        size: 1.5vw; //16px
+                        weight: 700;
+                    }
+                }
+
+                p {
+                    margin: 25px 0; //25px 0
+
+                    font: {
+                        size: 1.5vw; //20px
+                        weight: 500;
+                    }
+                }
+
+                button {
+                    width: 10vw; //110px
+                    padding: 7px 1vw; //7px 15px
+                    margin: 0 0.83vw; //0 10px
+
+                    font: {
+                        size: 1.4vw; //16px
+                        weight: 500;
+                    }
+                }
+            }
+        }
+
+        .slideImg2 {
+
+            div {
+
+                p {
+                    margin: 15px 0; //20px 0
+                }
+
+                button {
+                    margin: 15px 0.69vw; //15px 10px
+                }
+
+                .slide2font {
+                    position: absolute;
+                    bottom: 10%;
+                    left: 20%;
+
+                    font: {
+                        size: 1.2vw; //14px
+                        weight: 600;
+                    }
+                }
+            }
+        }
+
+        .slideImg3 {
+            div {
+                p {
+                    margin: 15px 0; //17px 0
+                }
+
+                button {
+                    margin: 0 0.83vw; //0 10px
+                }
+
+                .slide2font {
+
+                    font: {
+                        size: 1.2vw; //12px
+                        weight: 600;
+                    }
+                }
+            }
+        }
+    }
+
+    // 이너메뉴
+    .innerMenu {
+        padding: 3.5% 0;
+
+        .innerWrap {
+            width: auto;
+            padding: 0 5%;
+
+            ul {
+                display: flex;
+                flex-flow: row wrap;
+
+                li {
+                    margin: 0 2.5vw;
+
+                    img {
+                        width: auto;
+                        height: 9.9vh; //91px
+                    }
+
+                    p {
+                        margin-top: 1.63vh; //15px
+                        font-size: 1.5vw;
+                        font-weight: 400;
+                    }
+                }
+            }
+        }
+    }
+
+    //신제품 
+    .newWrap {
+        width: 100%;
+        margin: 0 auto;
+
+        .newBoxWrap {
+            width: 100%;
+            height: 45vh;
+            justify-content: space-between;
+
+            .col {
+                flex: none;
+            }
+
+            .newBox1 {
+
+                .new1 {
+                    width: 25vw !important; //404px
+                    padding-left: 1.38vw; //20px
+                    padding-top: 3.26vh; //30px
+
+                    h3 {
+                        margin-bottom: 1.08vh; //10px
+
+                        font: {
+                            size: 2.5vw; //35px
+                            weight: 700;
+                        }
+                    }
+
+                    h5 {
+
+                        font: {
+                            size: 1.5vw; //22px
+                            weight: 500;
+                        }
+                    }
+
+                    p {
+                        font: {
+                            size: 1.2vw; //18px
+                            weight: 500;
+                        }
+                    }
+                }
+            }
+
+            .newBox2 {
+
+                .new {
+                    width: 45vw !important; //826px
+                    height: 20vh; //233px
+
+                    img{
+                        display: none;
+                    }
+                }
+
+                .new2 {
+
+                    .newfontBox {
+                        width: auto;
+                        text-align: left;
+                        margin: 4% 0; //26px 0
+                        padding-right: 10%;
+
+                        h3 {
+                            margin-bottom: 1.08vh; //10px
+
+                            font: {
+                                size: 3vw; //35px
+                                weight: 700;
+                            }
+                        }
+
+                        h4 {
+                            font: {
+                                size: 1.5vw; //22px
+                                weight: 600;
+                            }
+                        }
+
+                        h5 {
+                            font: {
+                                size: 1.5vw; //22px
+                                weight: 500;
+                            }
+                        }
+
+                        p {
+                            font: {
+                                size: 1.2vw; //18px
+                                weight: 500;
+                            }
+                        }
+                    }
+                }
+
+                .new3 {
+                    .newfontBox2 {
+                        margin: 11% 0;
+                        margin-right: 12%;
+
+                        h3 {
+                            margin-top: 0vh; //20px
+                            margin-bottom: 1.088vh; //10px
+
+                            font: {
+                                size: 3vw; //35px
+                                weight: 700;
+                            }
+                        }
+
+                        h4 {
+                            font: {
+                                size: 1.5vw; //22px
+                                weight: 600;
+                            }
+                        }
+
+                        p {
+                            font: {
+                                size: 1.2vw; //18px
+                                weight: 500;
+                            }
+                        }
+                    }
+
+                    img {
+                        width: 20.22vw; //283px
+                        height: auto;
+                    }
+                }
+            }
+        }
+    }
+
+    // 중앙 슬라이드
+    .centerWrap {
+
+        h3 {
+            font: {
+                size: 2.5vw !important; //30px
+                weight: 700;
+            }
+        }
+
+        p {
+            font: {
+                size: 2vw !important; //25px
+                weight: 700;
+            }
+        }
+
+        .centerSlide {
+            width: 100%;
+            height: 480px; //480px
+            padding: 0 1.38vw; //20px
+            overflow: visible;
+
+            .center {
+                width: 398o; //398px
+                height: 402px; //402px
+                padding-left: 2vw !important; //30px
+            }
+        }
+
+        .center1 {
+            .centerfontBox1 {
+                padding-top: 20px; //20px
+
+                h4 {
+                    font: {
+                        size: 2vw !important; //30px
+                        weight: 700;
+                    }
+                }
+
+                p {
+                    margin: 10px 0; //10px
+
+                    font: {
+                        size: 1.38vw !important; //20px
+                        weight: 600;
+                    }
+                }
+            }
+        }
+
+        .center2 {
+
+            .centerfontBox2 {
+                text-align: left;
+
+                h5 {
+                    font: {
+                        size: 0.83vw !important; //12px
+                        weight: 700;
+                    }
+                }
+
+                h4 {
+                    font: {
+                        size: 1.52vw !important; //22px
+                        weight: 700;
+                    }
+                }
+
+                p {
+                    margin: 10px 0; //10px
+
+                    font: {
+                        size: 1.2vw !important; //15px
+                        weight: 500;
+                    }
+                }
+            }
+        }
+
+        .center3 {
+            .centerfontBox3 {
+                h5 {
+                    font: {
+                        size: 0.83vw; //12px
+                        weight: 700;
+                    }
+                }
+
+                h4 {
+                    font: {
+                        size: 1.52vw; //22px
+                        weight: 700;
+                    }
+                }
+            }
+        }
+
+        .center4 {
+            .centerfontBox4 {
+                padding-top: 20px; //20px
+
+                h4 {
+                    font: {
+                        size: 1.52vw; //22px
+                        weight: 700;
+                    }
+                }
+            }
+        }
+
+        .center5 {
+            .centerfontBox5 {
+                padding-top: 20px; //20px
+
+                h4 {
+                    font: {
+                        size: 1.52vw; //22px
+                        weight: 700;
+                    }
+                }
+
+                p {
+                    margin: 10px 0; //10px 0
+
+                    font: {
+                        size: 1.2vw !important; //15px
+                        weight: 500;
+                    }
+                }
+            }
+        }
+
+        .center6 {
+            .centerfontBox6 {
+                padding-top: 20px; //20px
+
+                h4 {
+                    font: {
+                        size: 1.52vw; //22px
+                        weight: 700;
+                    }
+
+                    line-height: 30px; //30px
+                }
+            }
+        }
+
+        .center7 {
+            .centerfontBox7 {
+                h5 {
+                    font: {
+                        size: 0.83vw; //12px
+                        weight: 700;
+                    }
+                }
+
+                h4 {
+                    font: {
+                        size: 1.52vw; //22px
+                        weight: 700;
+                    }
+                }
+            }
+        }
+    }
+
+    // 악세서리
+    .contentWrap {
+        width: auto;
+
+        .contentTitle {
+
+            h3 {
+                font: {
+                    size: 2.5vw !important; //30px
+                    weight: 700;
+                }
+            }
+
+            p {
+                font: {
+                    size: 2vw !important; //25px
+                    weight: 700;
+                }
+            }
+        }
+
+        .contentBigbox {
+            width: 100%;
+            margin: 5% 0;
+            justify-content: space-around;
+            row-gap: 30px;
+
+            .contentImgBox {
+                height: 225px; //225px
+
+                img[alt="악세"] {
+                    max-width: 20vw; //210px
+                    height: auto;
+                }
+
+                img[alt="색상"] {
+                    max-width: 10vw; //103px
+                    height: auto;
+                }
+            }
+
+            .contentBox {
+                width: 250px; //278px
+                height: 400px; //400px
+
+
+                .contentfont {
+                    padding: 0 1.07vw; //0 15px
+
+                    h6 {
+                        font: {
+                            size: 1.4vw; //11px
+                            weight: 600;
+                        }
+                    }
+
+                    h4 {
+                        font: {
+                            size: 1.5vw; //14px
+                            weight: 600;
+                        }
+                    }
+
+                    p {
+                        font: {
+                            size: 1.4vw; //13px
+                            weight: 400;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    // 할인
+    .saleWrap {
+        .saleBox {
+            .sale1 {
+                width: 95%; //915px
+                height: 260px; //260px
+                padding: 0 1.38vw; //0 20px
+
+                .sale1font {
+
+                    h5 {
+                        font: {
+                            size: 1.5vw; //14px
+                            weight: 600;
+                        }
+                    }
+
+                    h4 {
+                        font: {
+                            size: 3vw; //30px
+                            weight: 700;
+                        }
+                    }
+
+                    p {
+                        font: {
+                            size: 1.5vw; //15px
+                            weight: 400;
+                        }
+                    }
+                }
+
+                img {
+                    width: 100%;
+                    height: auto;
+                }
+            }
+
+            .sale2 {
+                width: 95%; //915px
+                height: 260px; //260px
+                padding: 0 1.38vw; //0 20px
+
+                .sale2font {
+                    padding-top: 15px; //15px
+                    position: relative;
+
+                    h5 {
+                        font: {
+                            size: 1.5vw; //14px
+                            weight: 600;
+                        }
+                    }
+
+                    h4 {
+                        font: {
+                            size: 3vw; //30px
+                            weight: 700;
+                        }
+                    }
+
+                    p {
+                        font: {
+                            size: 1.5vw; //15px
+                            weight: 400;
+                        }
+                    }
+
+                    h3 {
+                        font: {
+                            size: 1.8vw; //20px
+                            weight: 600;
+                        }
+                    }
+
+                    h6 {
+                        position: absolute;
+                        left: 0;
+                        bottom: 15%;
+
+                        font: {
+                            size: 1.5vw; //15px
+                            weight: 600;
+                        }
+                    }
+                }
+
+                img {
+                    width: 28%;
+                    height: auto;
+                }
+            }
+        }
+    }
+
+    // 고객지원
+    .serviceWrap {
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .serviceContent {
+            width: 100%;
+
+            h2 {
+                font: {
+                    size: 2.77vw; //40px
+                    weight: 700;
+                }
+            }
+
+            .serviceRow {
+                .serviceCol {
+                    width: 30%;
+
+                    img[alt="계정"] {
+                        width: 6vw; //80px
+                        height: auto;
+                        margin-bottom: 5px;
+                    }
+
+                    img[alt="수리"],
+                    img[alt="청구"] {
+                        width: 4.5vw; //60px
+                        height: auto;
+                        margin-bottom: 15px;
+                    }
+                }
+            }
+        }
+
+        .serviceContent2 {
+
+            h2 {
+                font: {
+                    size: 2.77vw; //40px
+                    weight: 700;
+                }
+            }
+
+            .input-group {
+                .serviceInput {
+                    padding: 10px 0.69vw;
+                    font-size: 1.5vw;
+                }
+
+                #button-addon2 {
+                    .fi-rs-search {
+                        font-size: 2vw;
+                    }
+                }
+            }
+        }
+    }
+
+    //장바구니
+    .cartfont1 {
+        h2 {
+            font: {
+                size: 3vw;
+                weight: 600;
+            }
+        }
+
+        p {
+            margin: 2% 0;
+
+            font: {
+                size: 2vw;
+                weight: 500;
+            }
+        }
+
+        .cartBtn1 {
+            width: 28.59vw; //400px
+            font-size: 1.8vw;
+            padding: 10px 0;
+        }
+    }
+
+    .cartTable {
+        width: 100%;
+        tbody {
+            .cartCount {
+                width: 10vw; //100
+
+                .cartDelt {
+                    font: {
+                        size: 1.5vw; //14px
+                        weight: 500;
+                    }
+                }
+            }
+
+            .price {
+                width: 10vw
+            }
+        }
+    }
+
+    .cartBtns {
+        .cartBtn2 {
+            font-size: 1.8vw; //16px
+            width: 28.59vw; //400px
+            padding: 10px 0;
+        }
+    }
+
+}
+
+
+@media (min-width: 817px) and (max-width: 990px) {
+
+    // 슬라이드
+    .mySwiper {
+        height: 510px; //592px
+
+        .swiper-slide {
+            div {
+                max-width: 41.7vw !important; //500px
+                margin-top: 35px; //35px
+
+                h2 {
+                    margin-bottom: 0;
+                    margin-top: 1%;
+
+                    font: {
+                        size: 4vw; //50px
+                        weight: 800;
+                    }
+                }
+
+                h4 {
+                    margin: 0;
+
+                    font: {
+                        size: 1.5vw; //16px
+                        weight: 700;
+                    }
+                }
+
+                p {
+                    margin: 25px 0; //25px 0
+
+                    font: {
+                        size: 1.5vw; //20px
+                        weight: 500;
+                    }
+                }
+
+                button {
+                    width: 10vw; //110px
+                    padding: 7px 1vw; //7px 15px
+                    margin: 0 0.83vw; //0 10px
+
+                    font: {
+                        size: 1.4vw; //16px
+                        weight: 500;
+                    }
+                }
+            }
+        }
+
+        .slideImg2 {
+
+            div {
+
+                p {
+                    margin: 15px 0; //20px 0
+                }
+
+                button {
+                    margin: 15px 0.69vw; //15px 10px
+                }
+
+                .slide2font {
+                    position: absolute;
+                    bottom: 10%;
+                    left: 20%;
+
+                    font: {
+                        size: 1.2vw; //14px
+                        weight: 600;
+                    }
+                }
+            }
+        }
+
+        .slideImg3 {
+            div {
+                p {
+                    margin: 15px 0; //17px 0
+                }
+
+                button {
+                    margin: 0 0.83vw; //0 10px
+                }
+
+                .slide2font {
+
+                    font: {
+                        size: 1.2vw; //12px
+                        weight: 600;
+                    }
+                }
+            }
+        }
+    }
+
+    // 이너메뉴
+    .innerMenu {
+        padding: 3.5% 0;
+
+        .innerWrap {
+            width: auto;
+            padding: 0 5%;
+
+            ul {
+                display: flex;
+                flex-flow: row wrap;
+
+                li {
+                    margin: 0 2.5vw;
+
+                    img {
+                        width: auto;
+                        height: 9.9vh; //91px
+                    }
+
+                    p {
+                        margin-top: 1.63vh; //15px
+                        font-size: 1.5vw;
+                        font-weight: 400;
+                    }
+                }
+            }
+        }
+    }
+
+    //신제품 
+    .newWrap {
+        width: 100%;
+        margin: 0 auto;
+
+        .newBoxWrap {
+            width: 100%;
+            height: 45vh;
+            justify-content: space-between;
+
+            .col {
+                flex: none;
+            }
+
+            .newBox1 {
+
+                .new1 {
+                    width: 25vw !important; //404px
+                    padding-left: 1.38vw; //20px
+                    padding-top: 3.26vh; //30px
+
+                    h3 {
+                        margin-bottom: 1.08vh; //10px
+
+                        font: {
+                            size: 2.5vw; //35px
+                            weight: 700;
+                        }
+                    }
+
+                    h5 {
+
+                        font: {
+                            size: 1.5vw; //22px
+                            weight: 500;
+                        }
+                    }
+
+                    p {
+                        font: {
+                            size: 1.2vw; //18px
+                            weight: 500;
+                        }
+                    }
+                }
+            }
+
+            .newBox2 {
+
+                .new {
+                    width: 45vw !important; //826px
+                    height: 20vh; //233px
+
+                    img{
+                        display: none;
+                    }
+                }
+
+                .new2 {
+
+                    .newfontBox {
+                        width: auto;
+                        text-align: left;
+                        margin: 4% 0; //26px 0
+                        padding-right: 10%;
+
+                        h3 {
+                            margin-bottom: 1.08vh; //10px
+
+                            font: {
+                                size: 3vw; //35px
+                                weight: 700;
+                            }
+                        }
+
+                        h4 {
+                            font: {
+                                size: 1.5vw; //22px
+                                weight: 600;
+                            }
+                        }
+
+                        h5 {
+                            font: {
+                                size: 1.5vw; //22px
+                                weight: 500;
+                            }
+                        }
+
+                        p {
+                            font: {
+                                size: 1.2vw; //18px
+                                weight: 500;
+                            }
+                        }
+                    }
+                }
+
+                .new3 {
+                    .newfontBox2 {
+                        margin: 11% 0;
+                        margin-right: 12%;
+
+                        h3 {
+                            margin-top: 0vh; //20px
+                            margin-bottom: 1.088vh; //10px
+
+                            font: {
+                                size: 3vw; //35px
+                                weight: 700;
+                            }
+                        }
+
+                        h4 {
+                            font: {
+                                size: 1.5vw; //22px
+                                weight: 600;
+                            }
+                        }
+
+                        p {
+                            font: {
+                                size: 1.2vw; //18px
+                                weight: 500;
+                            }
+                        }
+                    }
+
+                    img {
+                        width: 20.22vw; //283px
+                        height: auto;
+                    }
+                }
+            }
+        }
+    }
+
+    // 중앙 슬라이드
+    .centerWrap {
+
+        h3 {
+            font: {
+                size: 2.5vw !important; //30px
+                weight: 700;
+            }
+        }
+
+        p {
+            font: {
+                size: 2vw !important; //25px
+                weight: 700;
+            }
+        }
+
+        .centerSlide {
+            width: 100%;
+            height: 480px; //480px
+            padding: 0 1.38vw; //20px
+            overflow: visible;
+
+            .center {
+                width: 398o; //398px
+                height: 402px; //402px
+                padding-left: 2vw !important; //30px
+            }
+        }
+
+        .center1 {
+            .centerfontBox1 {
+                padding-top: 20px; //20px
+
+                h4 {
+                    font: {
+                        size: 2vw !important; //30px
+                        weight: 700;
+                    }
+                }
+
+                p {
+                    margin: 10px 0; //10px
+
+                    font: {
+                        size: 1.38vw !important; //20px
+                        weight: 600;
+                    }
+                }
+            }
+        }
+
+        .center2 {
+
+            .centerfontBox2 {
+                text-align: left;
+
+                h5 {
+                    font: {
+                        size: 0.83vw !important; //12px
+                        weight: 700;
+                    }
+                }
+
+                h4 {
+                    font: {
+                        size: 1.52vw !important; //22px
+                        weight: 700;
+                    }
+                }
+
+                p {
+                    margin: 10px 0; //10px
+
+                    font: {
+                        size: 1.2vw !important; //15px
+                        weight: 500;
+                    }
+                }
+            }
+        }
+
+        .center3 {
+            .centerfontBox3 {
+                h5 {
+                    font: {
+                        size: 0.83vw; //12px
+                        weight: 700;
+                    }
+                }
+
+                h4 {
+                    font: {
+                        size: 1.52vw; //22px
+                        weight: 700;
+                    }
+                }
+            }
+        }
+
+        .center4 {
+            .centerfontBox4 {
+                padding-top: 20px; //20px
+
+                h4 {
+                    font: {
+                        size: 1.52vw; //22px
+                        weight: 700;
+                    }
+                }
+            }
+        }
+
+        .center5 {
+            .centerfontBox5 {
+                padding-top: 20px; //20px
+
+                h4 {
+                    font: {
+                        size: 1.52vw; //22px
+                        weight: 700;
+                    }
+                }
+
+                p {
+                    margin: 10px 0; //10px 0
+
+                    font: {
+                        size: 1.2vw !important; //15px
+                        weight: 500;
+                    }
+                }
+            }
+        }
+
+        .center6 {
+            .centerfontBox6 {
+                padding-top: 20px; //20px
+
+                h4 {
+                    font: {
+                        size: 1.52vw; //22px
+                        weight: 700;
+                    }
+
+                    line-height: 30px; //30px
+                }
+            }
+        }
+
+        .center7 {
+            .centerfontBox7 {
+                h5 {
+                    font: {
+                        size: 0.83vw; //12px
+                        weight: 700;
+                    }
+                }
+
+                h4 {
+                    font: {
+                        size: 1.52vw; //22px
+                        weight: 700;
+                    }
+                }
+            }
+        }
+    }
+
+    // 악세서리
+    .contentWrap {
+        width: auto;
+
+        .contentTitle {
+
+            h3 {
+                font: {
+                    size: 2.5vw !important; //30px
+                    weight: 700;
+                }
+            }
+
+            p {
+                font: {
+                    size: 2vw !important; //25px
+                    weight: 700;
+                }
+            }
+        }
+
+        .contentBigbox {
+            width: 100%;
+            margin: 5% 0;
+            justify-content: space-around;
+            row-gap: 30px;
+
+            .contentImgBox {
+                height: 225px; //225px
+
+                img[alt="악세"] {
+                    max-width: 20vw; //210px
+                    height: auto;
+                }
+
+                img[alt="색상"] {
+                    max-width: 10vw; //103px
+                    height: auto;
+                }
+            }
+
+            .contentBox {
+                width: 250px; //278px
+                height: 400px; //400px
+
+
+                .contentfont {
+                    padding: 0 1.07vw; //0 15px
+
+                    h6 {
+                        font: {
+                            size: 1.4vw; //11px
+                            weight: 600;
+                        }
+                    }
+
+                    h4 {
+                        font: {
+                            size: 1.5vw; //14px
+                            weight: 600;
+                        }
+                    }
+
+                    p {
+                        font: {
+                            size: 1.4vw; //13px
+                            weight: 400;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    // 할인
+    .saleWrap {
+        .saleBox {
+            .sale1 {
+                width: 95%; //915px
+                height: 260px; //260px
+                padding: 0 1.38vw; //0 20px
+
+                .sale1font {
+
+                    h5 {
+                        font: {
+                            size: 1.5vw; //14px
+                            weight: 600;
+                        }
+                    }
+
+                    h4 {
+                        font: {
+                            size: 3vw; //30px
+                            weight: 700;
+                        }
+                    }
+
+                    p {
+                        font: {
+                            size: 1.5vw; //15px
+                            weight: 400;
+                        }
+                    }
+                }
+
+                img {
+                    width: 100%;
+                    height: auto;
+                }
+            }
+
+            .sale2 {
+                width: 95%; //915px
+                height: 260px; //260px
+                padding: 0 1.38vw; //0 20px
+
+                .sale2font {
+                    padding-top: 15px; //15px
+                    position: relative;
+
+                    h5 {
+                        font: {
+                            size: 1.5vw; //14px
+                            weight: 600;
+                        }
+                    }
+
+                    h4 {
+                        font: {
+                            size: 3vw; //30px
+                            weight: 700;
+                        }
+                    }
+
+                    p {
+                        font: {
+                            size: 1.5vw; //15px
+                            weight: 400;
+                        }
+                    }
+
+                    h3 {
+                        font: {
+                            size: 1.8vw; //20px
+                            weight: 600;
+                        }
+                    }
+
+                    h6 {
+                        position: absolute;
+                        left: 0;
+                        bottom: 15%;
+
+                        font: {
+                            size: 1.5vw; //15px
+                            weight: 600;
+                        }
+                    }
+                }
+
+                img {
+                    width: 28%;
+                    height: auto;
+                }
+            }
+        }
+    }
+
+    // 고객지원
+    .serviceWrap {
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .serviceContent {
+            width: 100%;
+
+            h2 {
+                font: {
+                    size: 2.77vw; //40px
+                    weight: 700;
+                }
+            }
+
+            .serviceRow {
+                .serviceCol {
+                    width: 30%;
+
+                    img[alt="계정"] {
+                        width: 6vw; //80px
+                        height: auto;
+                        margin-bottom: 5px;
+                    }
+
+                    img[alt="수리"],
+                    img[alt="청구"] {
+                        width: 4.5vw; //60px
+                        height: auto;
+                        margin-bottom: 15px;
+                    }
+                }
+            }
+        }
+
+        .serviceContent2 {
+
+            h2 {
+                font: {
+                    size: 2.77vw; //40px
+                    weight: 700;
+                }
+            }
+
+            .input-group {
+                .serviceInput {
+                    padding: 10px 0.69vw;
+                    font-size: 1.5vw;
+                }
+
+                #button-addon2 {
+                    .fi-rs-search {
+                        font-size: 2vw;
+                    }
+                }
+            }
+        }
+    }
+
+    //장바구니
+    .cartfont1 {
+        h2 {
+            font: {
+                size: 3vw;
+                weight: 600;
+            }
+        }
+
+        p {
+            margin: 2% 0;
+
+            font: {
+                size: 2vw;
+                weight: 500;
+            }
+        }
+
+        .cartBtn1 {
+            width: 28.59vw; //400px
+            font-size: 1.8vw;
+            padding: 10px 0;
+        }
+    }
+
+    .cartTable {
+        width: 100%;
+        tbody {
+            .cartCount {
+                width: 10vw; //100
+
+                .cartDelt {
+                    font: {
+                        size: 1.5vw; //14px
+                        weight: 500;
+                    }
+                }
+            }
+
+            .price {
+                width: 10vw
+            }
+        }
+    }
+
+    .cartBtns {
+        .cartBtn2 {
+            font-size: 1.8vw; //16px
+            width: 28.59vw; //400px
+            padding: 10px 0;
+        }
+    }
+
+}
+
+@media (min-width: 991px) and (max-width: 1199px) {
+
+    // 슬라이드
+    .mySwiper {
+        height: 510px; //592px
 
         .swiper-slide {
             div {
@@ -69,7 +1508,7 @@
                 .slide2font {
                     position: absolute;
                     bottom: 10%;
-                    left: 20%;
+                    left: 25%;
 
                     font: {
                         size: 0.97vw; //14px
@@ -109,7 +1548,12 @@
             padding: 0 5%;
 
             ul {
+                display: flex;
+                flex-flow: row wrap;
+
                 li {
+                    margin: 0 2.5vw;
+
                     img {
                         width: auto;
                         height: 9.9vh; //91px
@@ -286,7 +1730,7 @@
             overflow: visible;
 
             .center {
-                width: 398px; //398px
+                width: 398o; //398px
                 height: 402px; //402px
                 padding-left: 2vw !important; //30px
             }
@@ -337,7 +1781,7 @@
                     margin: 10px 0; //10px
 
                     font: {
-                        size: 1vw !important; //15px
+                        size: 1.2vw !important; //15px
                         weight: 500;
                     }
                 }
@@ -390,7 +1834,7 @@
                     margin: 10px 0; //10px 0
 
                     font: {
-                        size: 1vw !important; //15px
+                        size: 1.2vw !important; //15px
                         weight: 500;
                     }
                 }
@@ -707,33 +2151,34 @@
 
         .cartBtn1 {
             width: 28.59vw; //400px
-            font-size: 1.2vw;
+            font-size: 1.5vw;
             padding: 10px 0;
         }
     }
 
     .cartTable {
+        width: 100%;
         tbody {
             .cartCount {
-                width: 7.14vw; //100
+                width: 8.3vw; //100
 
                 .cartDelt {
                     font: {
-                        size: 1vw; //14px
+                        size: 1.3vw; //14px
                         weight: 500;
                     }
                 }
             }
 
             .price {
-                width: 7.14vw
+                width: 8.3vw
             }
         }
     }
 
     .cartBtns {
         .cartBtn2 {
-            font-size: 1.2vw; //16px
+            font-size: 1.5vw; //16px
             width: 28.59vw; //400px
             padding: 10px 0;
         }
@@ -1926,9 +3371,10 @@
     // 할인
     .saleWrap {
         width: auto;
-        
+
         .saleBox {
             width: 100%;
+
             .sale1 {
                 width: 63.58vw; //915px
                 height: 260px; //260px
